@@ -55,7 +55,7 @@ try {
   const response =await axios(
     {
       method:"POST",
-      url:`http://localhost:5000/api/v1/crm/addemployee`,
+      url:`https://api.solutionsathee.com/api/v1/crm/addemployee`,
       data:data,
       
     }

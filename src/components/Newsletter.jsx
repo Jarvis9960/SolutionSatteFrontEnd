@@ -12,7 +12,7 @@ const Newsletter = () => {
     try {
       const response = await axios({
         method: "post",
-        url: "http://localhost:5000/api/v1/crm/makeusersubscribe",
+        url: "https://api.solutionsathee.com/api/v1/crm/makeusersubscribe",
         data: {
           name: name,
           email: email,

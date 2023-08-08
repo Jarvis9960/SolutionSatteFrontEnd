@@ -45,7 +45,7 @@ const Udyam = () => {
     try {
       axios({
         method: "get",
-        url: `http://localhost:5000/api/v1/crm/getudyamcertificatebyid?UdyamCertificateId=${serviceID}`,
+        url: `https://api.solutionsathee.com/api/v1/crm/getudyamcertificatebyid?UdyamCertificateId=${serviceID}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -73,7 +73,7 @@ const Udyam = () => {
 
       const editedResponse = await axios({
         method: "patch",
-        url: "http://localhost:5000/api/v1/crm/updateudyamcertificate",
+        url: "https://api.solutionsathee.com/api/v1/crm/updateudyamcertificate",
         data: formData,
         headers: {
           Authorization: `Bearer ${token}`,
@@ -188,7 +188,7 @@ const Udyam = () => {
                   <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     {popupdata.hasOwnProperty("AdharCard") && (
                       <img
-                        src={`http://localhost:5000/${popupdata.AdharCard.split(
+                        src={`https://api.solutionsathee.com/${popupdata.AdharCard.split(
                           "public"
                         )[1].substring(1)}`}
                         alt=""
@@ -233,7 +233,7 @@ const Udyam = () => {
                   <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     {popupdata.hasOwnProperty("PanCard") && (
                       <img
-                        src={`http://localhost:5000/${popupdata.PanCard.split(
+                        src={`https://api.solutionsathee.com/${popupdata.PanCard.split(
                           "public"
                         )[1].substring(1)}`}
                         alt=""
@@ -277,7 +277,7 @@ const Udyam = () => {
                   <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     {popupdata.hasOwnProperty("BankAccountDetails") && (
                       <img
-                        src={`http://localhost:5000/${popupdata.BankAccountDetails.split(
+                        src={`https://api.solutionsathee.com/${popupdata.BankAccountDetails.split(
                           "public"
                         )[1].substring(1)}`}
                         alt=""
@@ -344,7 +344,7 @@ const Udyam = () => {
                   <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     {popupdata.hasOwnProperty("DetailsOfBusinessActivites") && (
                       <img
-                        src={`http://localhost:5000/${popupdata.DetailsOfBusinessActivites.split(
+                        src={`https://api.solutionsathee.com/${popupdata.DetailsOfBusinessActivites.split(
                           "public"
                         )[1].substring(1)}`}
                         alt=""
@@ -393,7 +393,7 @@ const Udyam = () => {
                   <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     {popupdata.hasOwnProperty("InformationOfTheInvestment") && (
                       <img
-                        src={`http://localhost:5000/${popupdata.InformationOfTheInvestment.split(
+                        src={`https://api.solutionsathee.com/${popupdata.InformationOfTheInvestment.split(
                           "public"
                         )[1].substring(1)}`}
                         alt=""
@@ -443,7 +443,7 @@ const Udyam = () => {
                   <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     {popupdata.hasOwnProperty("InformationOfTheTurnOver") && (
                       <img
-                        src={`http://localhost:5000/${popupdata.InformationOfTheTurnOver.split(
+                        src={`https://api.solutionsathee.com/${popupdata.InformationOfTheTurnOver.split(
                           "public"
                         )[1].substring(1)}`}
                         alt=""
@@ -492,7 +492,7 @@ const Udyam = () => {
                   <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     {popupdata.hasOwnProperty("DuplicateBillOfSale") && (
                       <img
-                        src={`http://localhost:5000/${popupdata.DuplicateBillOfSale.split(
+                        src={`https://api.solutionsathee.com/${popupdata.DuplicateBillOfSale.split(
                           "public"
                         )[1].substring(1)}`}
                         alt=""

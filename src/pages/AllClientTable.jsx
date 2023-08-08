@@ -51,7 +51,7 @@ const AllClientTable = () => {
     try {
       axios({
         method: "get",
-        url: "http://localhost:5000/api/v1/crm/getallclient",
+        url: "https://api.solutionsathee.com/api/v1/crm/getallclient",
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -72,7 +72,7 @@ const AllClientTable = () => {
 
   const handleEdit = async () => {
     const response = await axios
-      .patch(`http://localhost:5000/api/v1/crm/myclient/${id}`)
+      .patch(`https://api.solutionsathee.com/api/v1/crm/myclient/${id}`)
       .catch((error) => console.log("Error: ", error));
     if (response && response.data) {
     
@@ -85,7 +85,7 @@ const AllClientTable = () => {
     e.preventDefault();
     await axios({
       method: "get",
-      url: `http://localhost:5000/api/v1/crm/getclientbyid?clientId=${id}`,
+      url: `https://api.solutionsathee.com/api/v1/crm/getclientbyid?clientId=${id}`,
       headers: {
         Authorization: `Bearer ${token}`,
       },

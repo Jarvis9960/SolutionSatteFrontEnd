@@ -56,7 +56,7 @@ const Personal = () => {
     try {
       axios({
         method: "get",
-        url: `http://localhost:5000/api/v1/crm/getpersonalloanbyuid?personalLoanId=${serviceID}`,
+        url: `https://api.solutionsathee.com/api/v1/crm/getpersonalloanbyuid?personalLoanId=${serviceID}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -109,7 +109,7 @@ const Personal = () => {
 
       const editedResponse = await axios({
         method: "patch",
-        url: "http://localhost:5000/api/v1/crm/updatepersonalloan",
+        url: "https://api.solutionsathee.com/api/v1/crm/updatepersonalloan",
         data: formData,
         headers: {
           Authorization: `Bearer ${token}`,
@@ -272,7 +272,7 @@ const Personal = () => {
                     <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                       {popupdata.hasOwnProperty("SalariedProofOfIdentity") && (
                         <img
-                          src={`http://localhost:5000/${popupdata.SalariedProofOfIdentity.path
+                          src={`https://api.solutionsathee.com/${popupdata.SalariedProofOfIdentity.path
                             .split("public")[1]
                             .substring(1)}`}
                           alt=""
@@ -320,7 +320,7 @@ const Personal = () => {
                     <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                       {popupdata.hasOwnProperty("SalariedProofOfResidence") && (
                         <img
-                          src={`http://localhost:5000/${popupdata.SalariedProofOfResidence.path
+                          src={`https://api.solutionsathee.com/${popupdata.SalariedProofOfResidence.path
                             .split("public")[1]
                             .substring(1)}`}
                           alt=""
@@ -373,7 +373,7 @@ const Personal = () => {
                         "SalariedThreeMonthsBankStatement"
                       ) && (
                         <img
-                          src={`http://localhost:5000/${popupdata.SalariedThreeMonthsBankStatement.path
+                          src={`https://api.solutionsathee.com/${popupdata.SalariedThreeMonthsBankStatement.path
                             .split("public")[1]
                             .substring(1)}`}
                           alt=""
@@ -423,7 +423,7 @@ const Personal = () => {
                         "SalariedThreeMonthSalarySlip"
                       ) && (
                         <img
-                          src={`http://localhost:5000/${popupdata.SalariedThreeMonthSalarySlip.path
+                          src={`https://api.solutionsathee.com/${popupdata.SalariedThreeMonthSalarySlip.path
                             .split("public")[1]
                             .substring(1)}`}
                           alt=""
@@ -477,7 +477,7 @@ const Personal = () => {
                             return (
                               <>
                                 <img
-                                  src={`http://localhost:5000/${curr.path
+                                  src={`https://api.solutionsathee.com/${curr.path
                                     .split("public")[1]
                                     .substring(1)}`}
                                   alt=""
@@ -539,7 +539,7 @@ const Personal = () => {
                         "SelfEmployeedProofofIdentity"
                       ) && (
                         <img
-                          src={`http://localhost:5000/${popupdata.SelfEmployeedProofofIdentity.path
+                          src={`https://api.solutionsathee.com/${popupdata.SelfEmployeedProofofIdentity.path
                             .split("public")[1]
                             .substring(1)}`}
                           alt=""
@@ -589,7 +589,7 @@ const Personal = () => {
                         "SelfEmployeedProofofResidence"
                       ) && (
                         <img
-                          src={`http://localhost:5000/${popupdata.SelfEmployeedProofofResidence.path
+                          src={`https://api.solutionsathee.com/${popupdata.SelfEmployeedProofofResidence.path
                             .split("public")[1]
                             .substring(1)}`}
                           alt=""
@@ -638,7 +638,7 @@ const Personal = () => {
                     <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                       {popupdata.hasOwnProperty("SelfEmployeedIncomeProof") && (
                         <img
-                          src={`http://localhost:5000/${popupdata.SelfEmployeedIncomeProof.path
+                          src={`https://api.solutionsathee.com/${popupdata.SelfEmployeedIncomeProof.path
                             .split("public")[1]
                             .substring(1)}`}
                           alt=""
@@ -688,7 +688,7 @@ const Personal = () => {
                         "SelfEmployeedSixMonthBankStatement"
                       ) && (
                         <img
-                          src={`http://localhost:5000/${popupdata.SelfEmployeedSixMonthBankStatement.path
+                          src={`https://api.solutionsathee.com/${popupdata.SelfEmployeedSixMonthBankStatement.path
                             .split("public")[1]
                             .substring(1)}`}
                           alt=""
@@ -740,7 +740,7 @@ const Personal = () => {
                         "SelfEmployeedOfficeAddressProof"
                       ) && (
                         <img
-                          src={`http://localhost:5000/${popupdata.SelfEmployeedOfficeAddressProof.path
+                          src={`https://api.solutionsathee.com/${popupdata.SelfEmployeedOfficeAddressProof.path
                             .split("public")[1]
                             .substring(1)}`}
                           alt=""
@@ -790,7 +790,7 @@ const Personal = () => {
                         "SelfEmployeedProofofContinuityofBusiness"
                       ) && (
                         <img
-                          src={`http://localhost:5000/${popupdata.SelfEmployeedProofofContinuityofBusiness.path
+                          src={`https://api.solutionsathee.com/${popupdata.SelfEmployeedProofofContinuityofBusiness.path
                             .split("public")[1]
                             .substring(1)}`}
                           alt=""

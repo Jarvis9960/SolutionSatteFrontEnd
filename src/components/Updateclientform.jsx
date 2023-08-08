@@ -34,7 +34,7 @@ const Updateclientform = () => {
 
     await axios({
       method: "get",
-      url: `http://localhost:5000/api/v1/crm/getclientbyid?clientId=${id}`,
+      url: `https://api.solutionsathee.com/api/v1/crm/getclientbyid?clientId=${id}`,
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -64,7 +64,7 @@ const Updateclientform = () => {
     try {
       const response = await axios({
         method: "patch",
-        url: `http://localhost:5000/api/v1/crm/myclient/${id}`,
+        url: `https://api.solutionsathee.com/api/v1/crm/myclient/${id}`,
         data: {
           first_name: first_name,
           last_name: last_name,
