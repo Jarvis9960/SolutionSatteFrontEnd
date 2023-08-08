@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+    <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" /> 
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finance</title>
+  </head>
+  <body class="font-inter antialiased bg-slate-100 text-slate-600">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script>
+      if (localStorage.getItem("sidebar-expanded") == "true") {
+        document.querySelector("body").classList.add("sidebar-expanded");
+      } else {
+        document.querySelector("body").classList.remove("sidebar-expanded");
+      }
+    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script src="../path/to/chartjs.min.js"></script>
+    <!-- This is an example component -->
+
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js"
+      defer
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/alpine-collective/alpine-magic-helpers@0.3.x/dist/index.js"></script>
+  </body>
+</html>
