@@ -10,7 +10,7 @@ const viewclick = () => {};
 
 const handleEdit = async () => {
   const response = await axios
-    .patch("http://localhost:5000/api/v1/crm/myclient/:id")
+    .patch("https://api.solutionsathee.com/api/v1/crm/myclient/:id")
     .catch((error) => console.log("Error: ", error));
   if (response && response.data) {
   }
@@ -49,7 +49,7 @@ const Tableempolyee = ({ loandetail, length }) => {
   }, []);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/v1/crm/getallemployee").then((res) => {
+    axios.get("https://api.solutionsathee.com/api/v1/crm/getallemployee").then((res) => {
       setData(res.data.fetchdata);
     });
   }, []);
@@ -57,7 +57,7 @@ const Tableempolyee = ({ loandetail, length }) => {
   const singlefetch = async (id) => {
     await axios({
       method: "get",
-      url: `http://localhost:5000/api/v1/crm/getEmpolyeeIDforadmin/${id}`,
+      url: `https://api.solutionsathee.com/api/v1/crm/getEmpolyeeIDforadmin/${id}`,
       headers: {
         Authorization: `Bearer ${token}`,
       },

@@ -33,7 +33,7 @@ const Updatepassword = ({ Profiledata, id }) => {
     try {
       const response = await axios({
         method: "patch",
-        url: `http://localhost:5000/api/v1/crm/updatepassword/${Profiledata._id}`,
+        url: `https://api.solutionsathee.com/api/v1/crm/updatepassword/${Profiledata._id}`,
         data: data,
       });
 

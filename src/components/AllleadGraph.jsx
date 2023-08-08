@@ -130,7 +130,7 @@ const AllleadGraph = ({ employeeId }) => {
     if(employeeId){
   await axios({
       method: "get",
-      url: `http://localhost:5000/api/v1/crm/getemployeenumberoflead?currentUserId=${employeeId}`,
+      url: `https://api.solutionsathee.com/api/v1/crm/getemployeenumberoflead?currentUserId=${employeeId}`,
       headers: {
         Authorization: `Bearer ${token}`,
       },

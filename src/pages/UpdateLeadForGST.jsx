@@ -78,7 +78,7 @@ const GSTregistration = () => {
     try {
       axios({
         method: "get",
-        url: `http://localhost:5000/api/v1/crm/getGSTregistrationbyid?GSTRegistrationId=${serviceID}`,
+        url: `https://api.solutionsathee.com/api/v1/crm/getGSTregistrationbyid?GSTRegistrationId=${serviceID}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -135,7 +135,7 @@ const GSTregistration = () => {
 
       const editedResponse = await axios({
         method: "patch",
-        url: "http://localhost:5000/api/v1/crm/updateGSTRegistration",
+        url: "https://api.solutionsathee.com/api/v1/crm/updateGSTRegistration",
         data: formData,
         headers: {
           Authorization: `Bearer ${token}`,
@@ -266,7 +266,7 @@ const GSTregistration = () => {
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 {popupdata && (
                   <img
-                    src={`http://localhost:5000/${popupdata.IndividualPanCard.split(
+                    src={`https://api.solutionsathee.com/${popupdata.IndividualPanCard.split(
                       "public"
                     )[1].substring(1)}`}
                     alt=""
@@ -311,7 +311,7 @@ const GSTregistration = () => {
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 {popupdata.hasOwnProperty("IndividualAdharCard") && (
                   <img
-                    src={`http://localhost:5000/${popupdata.IndividualAdharCard.split(
+                    src={`https://api.solutionsathee.com/${popupdata.IndividualAdharCard.split(
                       "public"
                     )[1].substring(1)}`}
                     alt=""
@@ -353,7 +353,7 @@ const GSTregistration = () => {
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 {popupdata.hasOwnProperty("IndividualPhotograph") && (
                   <img
-                    src={`http://localhost:5000/${popupdata.IndividualPhotograph.split(
+                    src={`https://api.solutionsathee.com/${popupdata.IndividualPhotograph.split(
                       "public"
                     )[1].substring(1)}`}
                     alt=""
@@ -402,7 +402,7 @@ const GSTregistration = () => {
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 {popupdata.hasOwnProperty("IndividualBankAccountDetails") && (
                   <img
-                    src={`http://localhost:5000/${popupdata.IndividualBankAccountDetails.split(
+                    src={`https://api.solutionsathee.com/${popupdata.IndividualBankAccountDetails.split(
                       "public"
                     )[1].substring(1)}`}
                     alt=""
@@ -447,7 +447,7 @@ const GSTregistration = () => {
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 {popupdata.hasOwnProperty("IndividualAddress") && (
                   <img
-                    src={`http://localhost:5000/${popupdata.IndividualAddress.split(
+                    src={`https://api.solutionsathee.com/${popupdata.IndividualAddress.split(
                       "public"
                     )[1].substring(1)}`}
                     alt=""
@@ -496,7 +496,7 @@ const GSTregistration = () => {
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 {popupdata.hasOwnProperty("HUFPanCard") && (
                   <img
-                    src={`http://localhost:5000/${popupdata.HUFPanCard.split(
+                    src={`https://api.solutionsathee.com/${popupdata.HUFPanCard.split(
                       "public"
                     )[1].substring(1)}`}
                     alt=""
@@ -541,7 +541,7 @@ const GSTregistration = () => {
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 {popupdata.hasOwnProperty("AdharcardOfKartaHUF") && (
                   <img
-                    src={`http://localhost:5000/${popupdata.AdharcardOfKartaHUF.split(
+                    src={`https://api.solutionsathee.com/${popupdata.AdharcardOfKartaHUF.split(
                       "public"
                     )[1].substring(1)}`}
                     alt=""
@@ -588,7 +588,7 @@ const GSTregistration = () => {
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 {popupdata.hasOwnProperty("HUFPhotographOfTheOwner") && (
                   <img
-                    src={`http://localhost:5000/${popupdata.HUFPhotographOfTheOwner.split(
+                    src={`https://api.solutionsathee.com/${popupdata.HUFPhotographOfTheOwner.split(
                       "public"
                     )[1].substring(1)}`}
                     alt=""
@@ -633,7 +633,7 @@ const GSTregistration = () => {
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 {popupdata.hasOwnProperty("HUFBankAccountDetails") && (
                   <img
-                    src={`http://localhost:5000/${popupdata.HUFBankAccountDetails.split(
+                    src={`https://api.solutionsathee.com/${popupdata.HUFBankAccountDetails.split(
                       "public"
                     )[1].substring(1)}`}
                     alt=""
@@ -680,7 +680,7 @@ const GSTregistration = () => {
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 {popupdata.hasOwnProperty("HUFAddressProof") && (
                   <img
-                    src={`http://localhost:5000/${popupdata.HUFAddressProof.split(
+                    src={`https://api.solutionsathee.com/${popupdata.HUFAddressProof.split(
                       "public"
                     )[1].substring(1)}`}
                     alt=""
@@ -725,7 +725,7 @@ const GSTregistration = () => {
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 {popupdata.hasOwnProperty("CompanyPanCard") && (
                   <img
-                    src={`http://localhost:5000/${popupdata.CompanyPanCard.split(
+                    src={`https://api.solutionsathee.com/${popupdata.CompanyPanCard.split(
                       "public"
                     )[1].substring(1)}`}
                     alt=""
@@ -772,7 +772,7 @@ const GSTregistration = () => {
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 {popupdata.hasOwnProperty("CompanyCertificateOfIncorporation") && (
                   <img
-                    src={`http://localhost:5000/${popupdata.CompanyCertificateOfIncorporation.split(
+                    src={`https://api.solutionsathee.com/${popupdata.CompanyCertificateOfIncorporation.split(
                       "public"
                     )[1].substring(1)}`}
                     alt=""
@@ -817,7 +817,7 @@ const GSTregistration = () => {
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 {popupdata.hasOwnProperty("CompanyArticlesOfAssoication") && (
                   <img
-                    src={`http://localhost:5000/${popupdata.CompanyArticlesOfAssoication.split(
+                    src={`https://api.solutionsathee.com/${popupdata.CompanyArticlesOfAssoication.split(
                       "public"
                     )[1].substring(1)}`}
                     alt=""
@@ -864,7 +864,7 @@ const GSTregistration = () => {
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 {popupdata.hasOwnProperty("CompanyPanCardOfAuthorizedSignature") && (
                   <img
-                    src={`http://localhost:5000/${popupdata.CompanyPanCardOfAuthorizedSignature.split(
+                    src={`https://api.solutionsathee.com/${popupdata.CompanyPanCardOfAuthorizedSignature.split(
                       "public"
                     )[1].substring(1)}`}
                     alt=""
@@ -911,7 +911,7 @@ const GSTregistration = () => {
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 {popupdata.hasOwnProperty("CompanyAdharCardOfAuthorizedSignature") && (
                   <img
-                    src={`http://localhost:5000/${popupdata.CompanyAdharCardOfAuthorizedSignature.split(
+                    src={`https://api.solutionsathee.com/${popupdata.CompanyAdharCardOfAuthorizedSignature.split(
                       "public"
                     )[1].substring(1)}`}
                     alt=""
@@ -960,7 +960,7 @@ const GSTregistration = () => {
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 {popupdata.hasOwnProperty("CompanyBoardresolutionappointingauthorizedsignatory") && (
                   <img
-                    src={`http://localhost:5000/${popupdata.CompanyBoardresolutionappointingauthorizedsignatory.split(
+                    src={`https://api.solutionsathee.com/${popupdata.CompanyBoardresolutionappointingauthorizedsignatory.split(
                       "public"
                     )[1].substring(1)}`}
                     alt=""
@@ -1007,7 +1007,7 @@ const GSTregistration = () => {
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 {popupdata.hasOwnProperty("CompanyBankAccountDetails") && (
                   <img
-                    src={`http://localhost:5000/${popupdata.CompanyBankAccountDetails.split(
+                    src={`https://api.solutionsathee.com/${popupdata.CompanyBankAccountDetails.split(
                       "public"
                     )[1].substring(1)}`}
                     alt=""
@@ -1054,7 +1054,7 @@ const GSTregistration = () => {
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 {popupdata.hasOwnProperty("CompanyAddressProof") && (
                   <img
-                    src={`http://localhost:5000/${popupdata.CompanyAddressProof.split(
+                    src={`https://api.solutionsathee.com/${popupdata.CompanyAddressProof.split(
                       "public"
                     )[1].substring(1)}`}
                     alt=""

@@ -47,7 +47,7 @@ function AllLeadtable() {
     
       await axios({
         method: "get",
-        url: "http://localhost:5000/api/v1/crm/getpersonalloanforadmin",
+        url: "https://api.solutionsathee.com/api/v1/crm/getpersonalloanforadmin",
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -59,7 +59,7 @@ function AllLeadtable() {
     
       await axios({
         method: "get",
-        url: "http://localhost:5000/api/v1/crm/getbusinessloanforadmin",
+        url: "https://api.solutionsathee.com/api/v1/crm/getbusinessloanforadmin",
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -71,7 +71,7 @@ function AllLeadtable() {
     
       await axios({
         method: "get",
-        url: "http://localhost:5000/api/v1/crm/getmortgageloanforadmin",
+        url: "https://api.solutionsathee.com/api/v1/crm/getmortgageloanforadmin",
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -83,7 +83,7 @@ function AllLeadtable() {
     
       await axios({
         method: "get",
-        url: "http://localhost:5000/api/v1/crm/gethomeloanforadmin",
+        url: "https://api.solutionsathee.com/api/v1/crm/gethomeloanforadmin",
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -95,7 +95,7 @@ function AllLeadtable() {
     
       await axios({
         method: "get",
-        url: "http://localhost:5000/api/v1/crm/gethomeloanforemployee",
+        url: "https://api.solutionsathee.com/api/v1/crm/gethomeloanforemployee",
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -107,7 +107,7 @@ function AllLeadtable() {
     
       axios({
         method: "get",
-        url: "http://localhost:5000/api/v1/crm/getgoldloanforadmin",
+        url: "https://api.solutionsathee.com/api/v1/crm/getgoldloanforadmin",
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -120,7 +120,7 @@ function AllLeadtable() {
     
       await axios({
         method: "get",
-        url: "http://localhost:5000/api/v1/crm/getcreditcardforadmin",
+        url: "https://api.solutionsathee.com/api/v1/crm/getcreditcardforadmin",
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -132,7 +132,7 @@ function AllLeadtable() {
     
       await axios({
         method: "get",
-        url: "http://localhost:5000/api/v1/crm/getnewcorrectionpanapplicationforadmin",
+        url: "https://api.solutionsathee.com/api/v1/crm/getnewcorrectionpanapplicationforadmin",
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -144,7 +144,7 @@ function AllLeadtable() {
     
       await axios({
         method: "get",
-        url: "http://localhost:5000/api/v1/crm/getshopactforadmin",
+        url: "https://api.solutionsathee.com/api/v1/crm/getshopactforadmin",
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -156,7 +156,7 @@ function AllLeadtable() {
     
       await axios({
         method: "get",
-        url: "http://localhost:5000/api/v1/crm/getpassportforadmin",
+        url: "https://api.solutionsathee.com/api/v1/crm/getpassportforadmin",
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -168,7 +168,7 @@ function AllLeadtable() {
     
       await axios({
         method: "get",
-        url: "http://localhost:5000/api/v1/crm/getGSTRegistrationforadmin",
+        url: "https://api.solutionsathee.com/api/v1/crm/getGSTRegistrationforadmin",
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -180,7 +180,7 @@ function AllLeadtable() {
     
       await axios({
         method: "get",
-        url: "http://localhost:5000/api/v1/crm/getudyamcertificateforadmin",
+        url: "https://api.solutionsathee.com/api/v1/crm/getudyamcertificateforadmin",
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -192,7 +192,7 @@ function AllLeadtable() {
     
       await axios({
         method: "get",
-        url: "http://localhost:5000/api/v1/crm/getcarloanforadmin",
+        url: "https://api.solutionsathee.com/api/v1/crm/getcarloanforadmin",
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -204,7 +204,7 @@ function AllLeadtable() {
     
       await axios({
         method: "get",
-        url: "http://localhost:5000/api/v1/crm/getfoodlisenceforadmin",
+        url: "https://api.solutionsathee.com/api/v1/crm/getfoodlisenceforadmin",
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -219,7 +219,7 @@ function AllLeadtable() {
     if (service === "Personal Loan") {
       await axios({
         method: "get",
-        url: `http://localhost:5000/api/v1/crm/getpersonalloanbymobileforadmin?mobileNo=${number}`,
+        url: `https://api.solutionsathee.com/api/v1/crm/getpersonalloanbymobileforadmin?mobileNo=${number}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -237,7 +237,7 @@ function AllLeadtable() {
     if (service === "Business Loan") {
       await axios({
         method: "get",
-        url: `http://localhost:5000/api/v1/crm/getbusinessloanbymobileforadmin?mobileNo=${number}`,
+        url: `https://api.solutionsathee.com/api/v1/crm/getbusinessloanbymobileforadmin?mobileNo=${number}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -255,7 +255,7 @@ function AllLeadtable() {
     if (service === "Mortgage  Loan") {
       await axios({
         method: "get",
-        url: `http://localhost:5000/api/v1/crm/getmortgageloanbymobileforadmin?mobileNo=${number}`,
+        url: `https://api.solutionsathee.com/api/v1/crm/getmortgageloanbymobileforadmin?mobileNo=${number}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -273,7 +273,7 @@ function AllLeadtable() {
     if (service === "Home  Loan") {
       await axios({
         method: "get",
-        url: `http://localhost:5000/api/v1/crm/gethomeloanbymobileforadmin?mobileNo=${number}`,
+        url: `https://api.solutionsathee.com/api/v1/crm/gethomeloanbymobileforadmin?mobileNo=${number}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -292,7 +292,7 @@ function AllLeadtable() {
     if (service === "Home Loan Balance Transfer") {
       await axios({
         method: "get",
-        url: `http://localhost:5000/api/v1/crm/gethomeloanbymobileforadmin?mobileNo=${number}`,
+        url: `https://api.solutionsathee.com/api/v1/crm/gethomeloanbymobileforadmin?mobileNo=${number}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -311,7 +311,7 @@ function AllLeadtable() {
       try {
         axios({
           method: "get",
-          url: `http://localhost:5000/api/v1/crm/getgoldloanbymobileforadmin?mobileNo=${number}`,
+          url: `https://api.solutionsathee.com/api/v1/crm/getgoldloanbymobileforadmin?mobileNo=${number}`,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -328,7 +328,7 @@ function AllLeadtable() {
     if (service === "Credit Card") {
       await axios({
         method: "get",
-        url: `http://localhost:5000/api/v1/crm/getcreditcardloanbymobileforadmin?mobileNo=${number}`,
+        url: `https://api.solutionsathee.com/api/v1/crm/getcreditcardloanbymobileforadmin?mobileNo=${number}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -346,7 +346,7 @@ function AllLeadtable() {
     if (service === "New Correction Pan application") {
       await axios({
         method: "get",
-        url: `http://localhost:5000/api/v1/crm/getnewcorrectionpanapplicationbymobileforadmin?mobileNo=${number}`,
+        url: `https://api.solutionsathee.com/api/v1/crm/getnewcorrectionpanapplicationbymobileforadmin?mobileNo=${number}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -364,7 +364,7 @@ function AllLeadtable() {
     if (service === "Shop Act") {
       await axios({
         method: "get",
-        url: `http://localhost:5000/api/v1/crm/getshopactbymobileforadmin?mobileNo=${number}`,
+        url: `https://api.solutionsathee.com/api/v1/crm/getshopactbymobileforadmin?mobileNo=${number}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -382,7 +382,7 @@ function AllLeadtable() {
     if (service === "Passport") {
       await axios({
         method: "get",
-        url: `http://localhost:5000/api/v1/crm/getpassportbymobileforadmin?mobileNo=${number}`,
+        url: `https://api.solutionsathee.com/api/v1/crm/getpassportbymobileforadmin?mobileNo=${number}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -400,7 +400,7 @@ function AllLeadtable() {
     if (service === "GST registration application") {
       await axios({
         method: "get",
-        url: `http://localhost:5000/api/v1/crm/getgstregistrationbymobileforadmin?mobileNo=${number}`,
+        url: `https://api.solutionsathee.com/api/v1/crm/getgstregistrationbymobileforadmin?mobileNo=${number}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -418,7 +418,7 @@ function AllLeadtable() {
     if (service === "UDYAM Registration") {
       await axios({
         method: "get",
-        url: `http://localhost:5000/api/v1/crm/getudyamcertificatebymobileforadmin?mobileNo=${number}`,
+        url: `https://api.solutionsathee.com/api/v1/crm/getudyamcertificatebymobileforadmin?mobileNo=${number}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -436,7 +436,7 @@ function AllLeadtable() {
     if (service === "Car Loan") {
       await axios({
         method: "get",
-        url: `http://localhost:5000/api/v1/crm/getcarloanbymobileforadmin?mobileNo=${number}`,
+        url: `https://api.solutionsathee.com/api/v1/crm/getcarloanbymobileforadmin?mobileNo=${number}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -454,7 +454,7 @@ function AllLeadtable() {
     if (service === "Food Lisence") {
       await axios({
         method: "get",
-        url: `http://localhost:5000/api/v1/crm/getfoodlisencebymobilenumberforadmin?mobileNo=${number}`,
+        url: `https://api.solutionsathee.com/api/v1/crm/getfoodlisencebymobilenumberforadmin?mobileNo=${number}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },

@@ -49,7 +49,7 @@ const Food = () => {
     try {
       axios({
         method: "get",
-        url: `http://localhost:5000/api/v1/crm/getfoodlisencebyid?foodlisenceById=${serviceID}`,
+        url: `https://api.solutionsathee.com/api/v1/crm/getfoodlisencebyid?foodlisenceById=${serviceID}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -79,7 +79,7 @@ const Food = () => {
 
       const editedResponse = await axios({
         method: "patch",
-        url: `http://localhost:5000/api/v1/crm/updatefoodlisence`,
+        url: `https://api.solutionsathee.com/api/v1/crm/updatefoodlisence`,
         data: formData,
         headers: {
           Authorization: `Bearer ${token}`,
@@ -193,7 +193,7 @@ const Food = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("NRMOfLisence") && (
               <img
-                src={`http://localhost:5000/${popupdata.NRMOfLisence.split(
+                src={`https://api.solutionsathee.com/${popupdata.NRMOfLisence.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""
@@ -235,7 +235,7 @@ const Food = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("NewRegistration") && (
               <img
-                src={`http://localhost:5000/${popupdata.NewRegistration.split(
+                src={`https://api.solutionsathee.com/${popupdata.NewRegistration.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""
@@ -283,7 +283,7 @@ const Food = () => {
             {popupdata.hasOwnProperty("ProprietorshipDeclaration") && (
               <>
                 <img
-                  src={`http://localhost:5000/${popupdata.ProprietorshipDeclaration.split(
+                  src={`https://api.solutionsathee.com/${popupdata.ProprietorshipDeclaration.split(
                     "public"
                   )[1].substring(1)}`}
                   alt=""
@@ -338,7 +338,7 @@ const Food = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("CSGWNocNoted") && (
               <img
-                src={`http://localhost:5000/${popupdata.CSGWNocNoted.split(
+                src={`https://api.solutionsathee.com/${popupdata.CSGWNocNoted.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""
@@ -382,7 +382,7 @@ const Food = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("OnlineSaleOfAlcohol") && (
               <img
-                src={`http://localhost:5000/${popupdata.OnlineSaleOfAlcohol.split(
+                src={`https://api.solutionsathee.com/${popupdata.OnlineSaleOfAlcohol.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""
@@ -427,7 +427,7 @@ const Food = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("OnlineSaleOfAlcohol") && (
               <img
-                src={`http://localhost:5000/${popupdata.OnlineSaleOfAlcohol.split(
+                src={`https://api.solutionsathee.com/${popupdata.OnlineSaleOfAlcohol.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""
@@ -471,7 +471,7 @@ const Food = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("AdditionalDocumentForExpoters") && (
               <img
-                src={`http://localhost:5000/${popupdata.AdditionalDocumentForExpoters.split(
+                src={`https://api.solutionsathee.com/${popupdata.AdditionalDocumentForExpoters.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""
@@ -516,7 +516,7 @@ const Food = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("SampleFoodRecallPlanAndGuide") && (
               <img
-                src={`http://localhost:5000/${popupdata.SampleFoodRecallPlanAndGuide.split(
+                src={`https://api.solutionsathee.com/${popupdata.SampleFoodRecallPlanAndGuide.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""
@@ -560,7 +560,7 @@ const Food = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("BISLiscense") && (
               <img
-                src={`http://localhost:5000/${popupdata.BISLiscense.split(
+                src={`https://api.solutionsathee.com/${popupdata.BISLiscense.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""
@@ -602,7 +602,7 @@ const Food = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("Repacker") && (
               <img
-                src={`http://localhost:5000/${popupdata.Repacker.split(
+                src={`https://api.solutionsathee.com/${popupdata.Repacker.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""

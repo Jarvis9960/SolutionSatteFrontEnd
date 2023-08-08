@@ -36,7 +36,7 @@ const CreditCard = () => {
     try {
       axios({
         method: "get",
-        url: `http://localhost:5000/api/v1/crm/getcreditcardbyid?creditCardId=${serviceID}`,
+        url: `https://api.solutionsathee.com/api/v1/crm/getcreditcardbyid?creditCardId=${serviceID}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -62,7 +62,7 @@ const CreditCard = () => {
 
       const editedResponse = await axios({
         method: "patch",
-        url: "http://localhost:5000/api/v1/crm/updatecreditcard",
+        url: "https://api.solutionsathee.com/api/v1/crm/updatecreditcard",
         data: formData,
         headers: {
           Authorization: `Bearer ${token}`,
@@ -176,7 +176,7 @@ const CreditCard = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("FormSixteen") && (
               <img
-                src={`http://localhost:5000/${popupdata.FormSixteen.split(
+                src={`https://api.solutionsathee.com/${popupdata.FormSixteen.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""
@@ -220,7 +220,7 @@ const CreditCard = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("AadharCard") && (
               <img
-                src={`http://localhost:5000/${popupdata.AadharCard.split(
+                src={`https://api.solutionsathee.com/${popupdata.AadharCard.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""
@@ -262,7 +262,7 @@ const CreditCard = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("PanCard") && (
               <img
-                src={`http://localhost:5000/${popupdata.PanCard.split(
+                src={`https://api.solutionsathee.com/${popupdata.PanCard.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""
@@ -306,7 +306,7 @@ const CreditCard = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("ThreeMonthsSalarySlip") && (
               <img
-                src={`http://localhost:5000/${popupdata.ThreeMonthsSalarySlip.split(
+                src={`https://api.solutionsathee.com/${popupdata.ThreeMonthsSalarySlip.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""
@@ -351,7 +351,7 @@ const CreditCard = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("SixMonthsBankStatement") && (
               <img
-                src={`http://localhost:5000/${popupdata.SixMonthsBankStatement.split(
+                src={`https://api.solutionsathee.com/${popupdata.SixMonthsBankStatement.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""

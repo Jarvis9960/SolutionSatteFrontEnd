@@ -33,7 +33,7 @@ const Login = () => {
   const onSubmit = async (data) => {
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/v1/crm/employeelogin",
+        "https://api.solutionsathee.com/api/v1/crm/employeelogin",
         data
       );
       if (res.data.success) {

@@ -21,7 +21,7 @@ const Innerdashborad = () => {
   const fetchid = async () => {
     const response = await axios({
       method: "post",
-      url: "http://localhost:5000/api/v1/crm/sendmail",
+      url: "https://api.solutionsathee.com/api/v1/crm/sendmail",
       data: data,
       headers: {
         "Content-type": "application/json; charset=UTF-8",
