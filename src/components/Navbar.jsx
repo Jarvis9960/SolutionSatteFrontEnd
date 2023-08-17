@@ -29,7 +29,7 @@ const Navbar = () => {
               <div className="relative flex h-16 items-center justify-between">
                 
                 <img
-                  src={SmallLogo}
+                  src="../../public/Images/smallLogo.jpeg"
                   className="absolute inset-y-2 rounded-lg right-1 w-32 right-2 xl:hidden"
                 />
 
@@ -55,7 +55,7 @@ const Navbar = () => {
                     <div className="hidden sm:ml-6  sm:block  lg:ml-6 xl:block xl:ml-6 lg:block">
                       <div className="flex space-x-24 justify-center items-center myDIV">
                         <img
-                          src={SmallLogo}
+                          src="../../public/Images/smallLogo.jpeg"
                           className="w-36 right-20 rounded-lg"
                           style={{ position: "relative" }}
                         />

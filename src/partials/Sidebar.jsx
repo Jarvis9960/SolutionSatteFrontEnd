@@ -141,7 +141,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                 fill="url(#logo-b)"
               />
             </svg> */}
-            <img src={LogoImg} alt="" style={{width:"90px",borderRadius:"50%"}}/>
+            <img src="../images/logo.jpeg" alt="" style={{width:"90px",borderRadius:"50%"}}/>
           </NavLink>
         </div>
 

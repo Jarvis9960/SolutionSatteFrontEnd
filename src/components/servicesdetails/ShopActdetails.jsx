@@ -5,7 +5,7 @@ const ShopActdetails = () => {
   return (
     <div>
       <div className="my-5 container mx-auto">
-        <img className="m-auto" src={Shopactpic} />
+        <img className="m-auto" src='../../images/SHOP ACT.png' />
         <br />
         <h2 className="font-extrabold">
           Documents required for Shops and Establishment Act registration

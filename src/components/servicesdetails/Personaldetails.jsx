@@ -6,7 +6,7 @@ const Personaldetails = () => {
   return (
     <div className="">
    <div className="container mx-auto px-5 my-5">
-   <img className="m-auto " src={personalPic}/>
+   <img className="m-auto " src='../../images/PL.jpg'/>
       <div className="my-3">
         <h1 className="font-extrabold">
         A.	List Of Documents For Salaried Person 

@@ -6,7 +6,7 @@ const PanCorrectiondetails = () => {
     <div className="">
       <div className="container mx-auto px-5 my-5">
         <div className="my-3">
-          <img className="" src={PancardPic} />
+          <img className="" src='../../images/PAN CARD.png' />
           <br />
           <h1 className="font-extrabold">
             A. List of acceptable documents for Identity proof

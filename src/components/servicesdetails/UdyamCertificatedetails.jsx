@@ -5,7 +5,7 @@ const UdyamCertificatedetails = () => {
   return (
     <div className='my-5'>
         <h2 className="font-extrabold mx-20 xxs:mx-10 my-4">Udyam certificate:</h2>
-        <img className="m-auto " src={udhyamPic}/>
+        <img className="m-auto " src='../../images/UDYAM.png'/>
         <ul class="list-disc leading-loose mx-40 xxs:mx-10">
                 <li>Aadhar Card</li>
                 <li>Pan Card</li>

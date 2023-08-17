@@ -24,7 +24,7 @@ const CustomerFeedbacklp = () => {
             <div class="block rounded-lg bg-white shadow-lg dark:bg-neutral-700 dark:shadow-black/30">
               <div class="h-28 overflow-hidden rounded-t-lg bg-[#9d789b]"></div>
               <div class="mx-auto -mt-12 w-24 h-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
-                <img src={imageOne} />
+                <img src="../../images/clientOne.jpeg" />
               </div>
               <div class="p-6">
                 <h4 class="mb-4 text-2xl font-semibold">Ms Chinmai</h4>
@@ -51,7 +51,7 @@ const CustomerFeedbacklp = () => {
             <div class="block rounded-lg bg-white shadow-lg dark:bg-neutral-700 dark:shadow-black/30 ">
               <div class="h-28 overflow-hidden rounded-t-lg bg-[#7a81a8]"></div>
               <div class="mx-auto -mt-12 w-24 h-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
-                <img src={imageTwo} />
+                <img src="../../images/clientTwo.jpeg" />
               </div>
               <div class="p-6">
                 <h4 class="mb-4 text-2xl font-semibold">Alpesh Manseta</h4>
@@ -77,7 +77,7 @@ const CustomerFeedbacklp = () => {
             <div class="block rounded-lg bg-white shadow-lg dark:bg-neutral-700 dark:shadow-black/30">
               <div class="h-28 overflow-hidden rounded-t-lg bg-[#6d5b98]"></div>
               <div class="mx-auto -mt-12 w-24 h-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
-                <img src={imageThree} />
+                <img src="../../images/clientThree.jpeg" />
               </div>
               <div class="p-6">
                 <h4 class="mb-4 text-2xl font-semibold">Amit Gaikwad</h4>
