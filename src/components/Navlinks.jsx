@@ -2,7 +2,7 @@ import React from "react";
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -11,11 +11,14 @@ function classNames(...classes) {
 const Navlinks = () => {
   return (
     <div className="bg-[#172236]">
-      <div className="container mx-auto px-4 flex justify-between items-center py-5
-        xxs:flex-col xxs:gap-y-2 md:flex-row " style={{marginTop:"4px"}}>
+      <div
+        className="2xl:container xl:container lg:container md:container sm:container xs:container mx-auto px-4 flex justify-between items-center xxs:py-2 py-5
+        xxs:flex xxs:flex-wrap xxs:gap-y-3 md:flex-row "
+        style={{ marginTop: "1px" }}
+      >
         <Menu as="div" className="relative  text-left">
           <div>
-            <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-blue-400 px-3 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset   xxs:text-small">
+            <Menu.Button className="inline-flex w-40  justify-center gap-x-1.5 rounded-md bg-blue-400 px-2 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset   xxs:text-small">
               Banking Services
               <ChevronDownIcon
                 className="-mr-1 h-5 w-5 text-gray-400"
@@ -34,7 +37,7 @@ const Navlinks = () => {
             leaveTo="transform opacity-0 scale-95"
           >
             <Menu.Items className="absolute right-0 z-10 mt-2 w-40 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-              <div className="py-1">
+              <div className="py-1 text-center">
                 <Menu.Item>
                   {({ active }) => (
                     <Link
@@ -126,83 +129,86 @@ const Navlinks = () => {
                     </Link>
                   )}
                 </Menu.Item>
-               
               </div>
             </Menu.Items>
           </Transition>
         </Menu>
         <Menu as="div" className="relative inline-block text-left">
           <div>
-          <Menu as="div" className="relative inline-block text-left">
-          <div>
-            <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-blue-400 px-3 py-2 
-            text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300 ">
-              B2C Services
-              <ChevronDownIcon
-                className="-mr-1 h-5 w-5 text-gray-400"
-                aria-hidden="true"
-              />
-            </Menu.Button>
-          </div>
-
-          <Transition
-            as={Fragment}
-            enter="transition ease-out duration-100"
-            enterFrom="transform opacity-0 scale-95"
-            enterTo="transform opacity-100 scale-100"
-            leave="transition ease-in duration-75"
-            leaveFrom="transform opacity-100 scale-100"
-            leaveTo="transform opacity-0 scale-95"
-          >
-            
-            <Menu.Items className="absolute right-0 z-10 mt-2 w-40 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-              <div className="py-1">
-                <Menu.Item>
-                  {({ active }) => (
-                    <Link
-                      to="#"
-                      className={classNames(
-                        active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                        "block px-4 py-2 text-sm"
-                      )}
-                    >
-                      Life Insurance
-                    </Link>
-                  )}
-                </Menu.Item>
-                <Menu.Item>
-                  {({ active }) => (
-                    <Link
-                      to="#"
-                      className={classNames(
-                        active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                        "block px-4 py-2 text-sm"
-                      )}
-                    >
-                      Motor Insurance
-                    </Link>
-                  )}
-                </Menu.Item>
-                <Menu.Item>
-                  {({ active }) => (
-                    <Link
-                      to="#"
-                      className={classNames(
-                        active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                        "block px-4 py-2 text-sm"
-                      )}
-                    >
-                      Health Insurance
-                    </Link>
-                  )}
-                </Menu.Item>
-                
-                
-               
+            <Menu as="div" className="relative inline-block text-left">
+              <div>
+                <Menu.Button
+                  className="inline-flex w-40 justify-center gap-x-1.5 rounded-md bg-blue-400 px-2 py-2 
+            text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300 "
+                >
+                  B2C Services
+                  <ChevronDownIcon
+                    className="-mr-1 h-5 w-5 text-gray-400"
+                    aria-hidden="true"
+                  />
+                </Menu.Button>
               </div>
-            </Menu.Items>
-          </Transition>
-        </Menu>
+              <Transition
+                as={Fragment}
+                enter="transition ease-out duration-100"
+                enterFrom="transform opacity-0 scale-95"
+                enterTo="transform opacity-100 scale-100"
+                leave="transition ease-in duration-75"
+                leaveFrom="transform opacity-100 scale-100"
+                leaveTo="transform opacity-0 scale-95"
+              >
+                <Menu.Items className="absolute right-0 z-10 mt-2 w-40 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                  <div className="py-1 text-center">
+                    <Menu.Item>
+                      {({ active }) => (
+                        <Link
+                          to="#"
+                          className={classNames(
+                            active
+                              ? "bg-gray-100 text-gray-900"
+                              : "text-gray-700",
+                            "block px-4 py-2 text-sm"
+                          )}
+                        >
+                          Life Insurance
+                        </Link>
+                      )}
+                    </Menu.Item>
+                    <Menu.Item>
+                      {({ active }) => (
+                        <Link
+                          to="#"
+                          className={classNames(
+                            active
+                              ? "bg-gray-100 text-gray-900"
+                              : "text-gray-700",
+                            "block px-4 py-2 text-sm"
+                          )}
+                        >
+                          Motor Insurance
+                        </Link>
+                      )}
+                    </Menu.Item>
+                    <Menu.Item>
+                      {({ active }) => (
+                        <Link
+                          to="#"
+                          className={classNames(
+                            active
+                              ? "bg-gray-100 text-gray-900"
+                              : "text-gray-700",
+                            "block px-4 py-2 text-sm"
+                          )}
+                        >
+                          Health Insurance
+                        </Link>
+                      )}
+                    </Menu.Item>
+                  </div>
+                </Menu.Items>
+              </Transition>
+                      
+            </Menu>
 
             {/* <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-blue-400 px-3 py-2 
             text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300 ">
@@ -224,7 +230,7 @@ const Navlinks = () => {
             leaveTo="transform opacity-0 scale-95"
           >
             <Menu.Items className="absolute right-0 z-10 mt-2 w-40 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-              <div className="py-1">
+              <div className="py-1 text-center">
                 <Menu.Item>
                   {({ active }) => (
                     <Link
@@ -287,8 +293,10 @@ const Navlinks = () => {
         </Menu>
         <Menu as="div" className="relative inline-block text-left">
           <div>
-            <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-blue-400 px-3 py-2 
-            text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300  ">
+            <Menu.Button
+              className="inline-flex w-40 justify-center gap-x-1.5 rounded-md bg-blue-400 px-2 py-2 
+            text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300  "
+            >
               G2C Services
               <ChevronDownIcon
                 className="-mr-1 h-5 w-5 text-gray-400"
@@ -306,9 +314,11 @@ const Navlinks = () => {
             leaveFrom="transform opacity-100 scale-100"
             leaveTo="transform opacity-0 scale-95"
           >
-            <Menu.Items className="absolute right-0 z-10 mt-2 w-40 origin-top-right rounded-md bg-white shadow-lg ring-1
-             ring-black ring-opacity-5 focus:outline-none">
-              <div className="py-1">
+            <Menu.Items
+              className="absolute right-0 z-10 mt-2 w-40 origin-top-right rounded-md bg-white shadow-lg ring-1
+             ring-black ring-opacity-5 focus:outline-none"
+            >
+              <div className="py-1 text-center">
                 <Menu.Item>
                   {({ active }) => (
                     <Link
@@ -322,7 +332,7 @@ const Navlinks = () => {
                     </Link>
                   )}
                 </Menu.Item>
-                
+
                 <Menu.Item>
                   {({ active }) => (
                     <Link
@@ -332,7 +342,7 @@ const Navlinks = () => {
                         "block px-4 py-2 text-sm"
                       )}
                     >
-                     Pan card
+                      Pan card
                     </Link>
                   )}
                 </Menu.Item>
@@ -352,7 +362,7 @@ const Navlinks = () => {
                 <Menu.Item>
                   {({ active }) => (
                     <Link
-                      to="#"
+                      to="/shopactdetails"
                       className={classNames(
                         active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                         "block px-4 py-2 text-sm"
@@ -365,7 +375,7 @@ const Navlinks = () => {
                 <Menu.Item>
                   {({ active }) => (
                     <Link
-                      to="#"
+                      to="/foodlicense"
                       className={classNames(
                         active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                         "block px-4 py-2 text-sm"
@@ -394,9 +404,11 @@ const Navlinks = () => {
         </Menu>
         <Menu as="div" className="relative inline-block text-left">
           <div>
-            <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-blue-400 px-3 py-2 
-            text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300  xs:p-2">
-              GST Suvidha
+            <Menu.Button
+              className="inline-flex w-40 justify-center gap-x-1.5 rounded-md bg-blue-400 px-2 py-2 
+            text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300  xs:p-2"
+            >
+              Tax Services
               <ChevronDownIcon
                 className="-mr-1 h-5 w-5 text-gray-400"
                 aria-hidden="true"
@@ -414,7 +426,7 @@ const Navlinks = () => {
             leaveTo="transform opacity-0 scale-95"
           >
             <Menu.Items className="absolute right-0 z-10 mt-2 w-40 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-              <div className="py-1">
+              <div className="py-1 text-center">
                 <Menu.Item>
                   {({ active }) => (
                     <Link
@@ -428,7 +440,7 @@ const Navlinks = () => {
                     </Link>
                   )}
                 </Menu.Item>
-                
+
                 <Menu.Item>
                   {({ active }) => (
                     <Link
@@ -439,19 +451,6 @@ const Navlinks = () => {
                       )}
                     >
                       GST Filing
-                    </Link>
-                  )}
-                </Menu.Item>
-                <Menu.Item>
-                  {({ active }) => (
-                    <Link
-                      to="#"
-                      className={classNames(
-                        active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                        "block px-4 py-2 text-sm"
-                      )}
-                    >
-                      Income Tax returns
                     </Link>
                   )}
                 </Menu.Item>
@@ -485,7 +484,7 @@ const Navlinks = () => {
             </Menu.Items>
           </Transition>
         </Menu>
-        </div>
+      </div>
     </div>
   );
 };

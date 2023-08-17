@@ -3,13 +3,13 @@ import React from "react";
 const GSTregdetails = () => {
   return (
     <div>
-      <div className="my-3">
-        <h2 className="font-extrabold mx-20 xxs:mx-10">
+      <div className="my-3 container mx-auto">
+        <h2 className="font-extrabold">
           Documents required for GST registration
         </h2>
         <br />
-        <h2 className="font-extrabold mx-20 xxs:mx-10">Sole proprietor / Individual</h2>
-        <ul class="list-disc leading-loose mx-40 xxs:mx-10">
+        <h2 className="font-extrabold">Sole proprietor / Individual</h2>
+        <ul class="list-disc leading-loose ">
           <li>PAN card of the owner</li>
           <li>Aadhar card of the owner</li>
           <li>
@@ -20,8 +20,8 @@ const GSTregdetails = () => {
         </ul>
 
 
-        <h2 className="font-extrabold mx-20 xxs:mx-10">Partnership firm (including LLP)</h2>
-        <ul class="list-disc leading-loose mx-40 xxs:mx-10">
+        <h2 className="font-extrabold my-4">Partnership firm (including LLP)</h2>
+        <ul class="list-disc leading-loose ">
           <li>PAN card of all partners (including managing partner and authorized signatory)</li>
           <li>Photograph of all partners and authorized signatories (in JPEG format, maximum size – 100 KB)</li>
           <li>
@@ -35,8 +35,8 @@ const GSTregdetails = () => {
 
 
 
-        <h2 className="font-extrabold mx-20 xxs:mx-10">HUF</h2>
-        <ul class="list-disc leading-loose mx-40 xxs:mx-10">
+        <h2 className="font-extrabold my-4">HUF</h2>
+        <ul class="list-disc leading-loose ">
           <li>PAN card of HUF</li>
           <li>PAN card and Aadhar card of Karta</li>
           <li>Photograph of the owner (in JPEG format, maximum size – 100 KB)</li>
@@ -44,8 +44,8 @@ const GSTregdetails = () => {
           <li>Address proof of principal place of business</li>
         </ul>
 
-        <h2 className="font-extrabold mx-20 xxs:mx-10">Company (Public and Private) (Indian and foreign)</h2>
-        <ul class="list-disc leading-loose mx-40 xxs:mx-10">
+        <h2 className="font-extrabold my-4">Company (Public and Private) (Indian and foreign)</h2>
+        <ul class="list-disc leading-loose ">
             <li>PAN card of Company</li>
             <li>Certificate of incorporation given by Ministry of Corporate Affairs</li>
             <li>Memorandum of Association / Articles of Association</li>

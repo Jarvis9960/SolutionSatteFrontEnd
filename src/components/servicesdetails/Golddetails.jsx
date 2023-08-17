@@ -1,24 +1,26 @@
-import React from 'react'
+import React from "react";
 
 const Golddetails = () => {
   return (
     <div>
-     <div className="my-3">
-    <img className="w-6/12 mx-40" src='https://www.cibil.com/resources/cibil/img/banner/goldloanblog.jpg'/><br/>
-    <h2 className="font-extrabold mx-10">
-        These document are required for	Gold Loan:
-        </h2><br/>
-        <h2 className="font-extrabold mx-10">
-        	Gold Loan
+      <div className="my-5 container mx-auto">
+        {/* <img
+          className="m-auto"
+          src="https://www.cibil.com/resources/cibil/img/banner/goldloanblog.jpg"
+        /> */}
+        <br />
+        <h2 className="font-extrabold text-center mb-5">Gold Loan</h2>
+        <h2 className="font-extrabold">
+          These document are required for Gold Loan:
         </h2>
-        <ul class="list-disc leading-loose mx-10">
+        <br />
+        <ul class="list-disc leading-loose">
           <li>Aadhar Card</li>
           <li>Pan card</li>
-         
         </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Golddetails
+export default Golddetails;

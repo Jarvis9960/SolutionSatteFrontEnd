@@ -1,9 +1,11 @@
 import React from 'react'
+import udhyamPic from '../../images/UDYAM.png'
 
 const UdyamCertificatedetails = () => {
   return (
-    <div>
-        <h2 className="font-extrabold mx-20 xxs:mx-10">Udyam certificate:</h2>
+    <div className='my-5'>
+        <h2 className="font-extrabold mx-20 xxs:mx-10 my-4">Udyam certificate:</h2>
+        <img className="m-auto " src={udhyamPic}/>
         <ul class="list-disc leading-loose mx-40 xxs:mx-10">
                 <li>Aadhar Card</li>
                 <li>Pan Card</li>
@@ -14,7 +16,7 @@ const UdyamCertificatedetails = () => {
                 <li>Information on the turnover.</li>
                 <li>Duplicates bill of sale and purchases.</li>
         </ul>
-    </div>
+    </div> 
   )
 }
 

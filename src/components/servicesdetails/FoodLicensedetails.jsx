@@ -1,9 +1,11 @@
 import React from "react";
+import Foodpic from '../../images/FOOD.jpg'
 
 const FoodLicensedetails = () => {
   return (
-    <div>
-      <h2 className="font-extrabold mx-20 xxs:mx-10">Food License</h2>
+    <div className="my-5">
+      <h2 className="font-extrabold container mx-auto xxs:mx-10 my-4">Food License</h2>
+      <img className="m-auto w-72" src={Foodpic}/>
       <ul class="list-disc leading-loose mx-40 xxs:mx-10">
         <li>New/Renewal/Modification of License</li>
         <li>New Registration</li>

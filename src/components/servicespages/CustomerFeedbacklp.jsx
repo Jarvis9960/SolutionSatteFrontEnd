@@ -8,7 +8,7 @@ const CustomerFeedbacklp = () => {
     <div>
       <section class="text-neutral-700 dark:text-neutral-300  text-center w-full m-auto grid grid-col-3 md:grid-cols-1 sm:grid-col-1">
         <div
-          class="mx-auto text-center  md:max-w-xl w-3/5 "
+          class="mx-auto text-center  md:max-w-xl w-3/5 xxs:w-11/12"
           style={{ color: "black" }}
         >
           <h3 class="mb-6 text-3xl font-bold">Love From Clients</h3>
@@ -27,7 +27,7 @@ const CustomerFeedbacklp = () => {
                 <img src={imageOne} />
               </div>
               <div class="p-6">
-                <h4 class="mb-4 text-2xl font-semibold">Mr Chinmai</h4>
+                <h4 class="mb-4 text-2xl font-semibold">Ms Chinmai</h4>
                 <hr />
                 <p class="mt-4">
                   <svg
@@ -54,7 +54,7 @@ const CustomerFeedbacklp = () => {
                 <img src={imageTwo} />
               </div>
               <div class="p-6">
-                <h4 class="mb-4 text-2xl font-semibold">Amit</h4>
+                <h4 class="mb-4 text-2xl font-semibold">Alpesh Manseta</h4>
                 <hr />
                 <p class="mt-4">
                   <svg
@@ -80,7 +80,7 @@ const CustomerFeedbacklp = () => {
                 <img src={imageThree} />
               </div>
               <div class="p-6">
-                <h4 class="mb-4 text-2xl font-semibold">Alpesh Manseta</h4>
+                <h4 class="mb-4 text-2xl font-semibold">Amit Gaikwad</h4>
                 <hr />
                 <p class="mt-4">
                   <svg
