@@ -2,10 +2,10 @@ import React from "react";
 
 const Businessdetails = () => {
   return (
-    <div className="container mx-auto px-5 my-5">
-   <div className="container mx-auto px-5 my-5">
+    <div className="">
+   <div className="container mx-auto px-5 my-5 xxs:px-0">
       <div className="my-3">
-      <img class="w-6/12 mx-10" src="https://poonawallafincorp.com/pfca/assets/blog_banner/blog_banner-1651296902.jpg"/> <br/>
+      <img className="" src="https://poonawallafincorp.com/pfca/assets/blog_banner/blog_banner-1651296902.jpg"/> <br/>
         <h1 className="font-extrabold">
         The following documents are required along with your Business Loan application:
         </h1><br/>

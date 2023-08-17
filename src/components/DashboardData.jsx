@@ -21,7 +21,7 @@ const DashboardData = () => {
         setLoading(true);
         axios({
           method: "get",
-          url: "https://api.solutionsathee.com/api/v1/crm/getnumberofleadforallserviceadmin",
+          url: "http://localhost:5000/api/v1/crm/getnumberofleadforallserviceadmin",
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -37,7 +37,7 @@ const DashboardData = () => {
         setLoading(true);
         axios({
           method: "get",
-          url: "https://api.solutionsathee.com/api/v1/crm/getnumberofleadforallservice",
+          url: "http://localhost:5000/api/v1/crm/getnumberofleadforallservice",
           headers: {
             Authorization: `Bearer ${token}`,
           },

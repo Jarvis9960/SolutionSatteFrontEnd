@@ -6,6 +6,8 @@ import * as yup from "yup";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import LoginNavbar from "../components/LoginNavbar";
+import imgFive from "../../public/Images/saathLogo.jpeg";
 
 const schema = yup
   .object()
@@ -33,7 +35,7 @@ const Login = () => {
   const onSubmit = async (data) => {
     try {
       const res = await axios.post(
-        "https://api.solutionsathee.com/api/v1/crm/employeelogin",
+        "http://localhost:5000/api/v1/crm/employeelogin",
         data
       );
       if (res.data.success) {
@@ -57,15 +59,17 @@ const Login = () => {
     }
   };
 
-  const url =
-    "https://miro.medium.com/v2/resize:fit:5000/1*IZxH_61JHDeAAK7QqtS2zA.jpeg";
   return (
-    <div
-      className="relative top-1 flex flex-col justify-center min-h-screen overflow-hidden"
-      style={{ backgroundImage: `url(${url})`, backgroundSize: "cover", }}
-    >
-      <div className="flex flex-col items-center ">
-      <div className="w-full  xl:w-1/3 lg:w-1/3 p-6 m-auto bg-white bg-opacity-75 rounded-md shadow-md lg:max-w-xl">
+    <div className="xxs:bg-slate-900 md:bg-slate-900">
+      <div className="xl:h-screen 2xl:h-screen lg:h-screen md:h-screen sm:h-screen xs:h-screen xxs:h-screen md:pt-12 sm:pt-12 xs:pt-12 xxs:pt-12">
+        <div className="xl:bg-slate-900 2xl:bg-slate-900 lg:bg-slate-900 relative">
+          <img
+            src={imgFive}
+            alt=""
+            className="xl:h-screen 2xl:h-screen lg:h-screen w-1/2 md:m-auto sm:m-auto xs:m-auto xxs:m-auto md:rounded-full sm:rounded-full xs:rounded-full xxs:rounded-full"
+          />
+        </div>
+        <div className=" xl:absolute lg:absolute 2xl:absolute top-32 md:h-1/3 md:mt-12 right-32 w-full sm:mt-12 xs:mt-12 xxs:mt-12 md:w-4/5 xxs:w-4/5 xxs:m-auto md:m-auto xl:w-1/3 lg:w-1/3 p-6  bg-white bg-opacity-75 rounded-md shadow-md lg:max-w-xl ">
           <h1 className="text-3xl font-semibold text-center text-purple-700 underline">
             Sign in
           </h1>
@@ -93,13 +97,12 @@ const Login = () => {
               </label>
               <input
                 type="password"
-               
                 className="block w-full px-4 py-2 mt-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
                 {...register("password")}
               />
               <small className="text-red-600">{errors.password?.message}</small>
             </div>
-          
+
             <div className="mt-6">
               <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-purple-700 rounded-md hover:bg-purple-600 focus:outline-none focus:bg-purple-600">
                 Login
@@ -107,7 +110,6 @@ const Login = () => {
             </div>
           </form>
           <ToastContainer />
-         
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@ const Myleadform = () => {
   const [services, setservices] = useState([]);
 
   const getser = async () => {
-    const service = await axios.get("https://api.solutionsathee.com/api/v1/crm/Service");
+    const service = await axios.get("http://localhost:5000/api/v1/crm/Service");
     if (service.data.Succes) {
       setservices(service.data.already);
     }

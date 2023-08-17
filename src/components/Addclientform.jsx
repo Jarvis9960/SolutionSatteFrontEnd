@@ -46,7 +46,7 @@ const Addclientform = () => {
     try {
       const response = await axios({
         method: "post",
-        url: "https://api.solutionsathee.com/api/v1/crm/addclient",
+        url: "http://localhost:5000/api/v1/crm/addclient",
         data: data,
         headers: {
           Authorization: `Bearer ${token}`,

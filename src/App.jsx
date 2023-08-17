@@ -75,6 +75,8 @@ import UpdateCorrectionForm from "./pages/UpdateCorrectionForm";
 
 import ErrorPage from "./pages/ErrorPage";
 import Updateemployeepass from "./pages/Updateemployeepass";
+import ShopActdetails from "./components/servicesdetails/ShopActdetails";
+import ShopActp from "./components/servicespages/ShopActp";
 function App() {
   const location = useLocation();
 
@@ -96,6 +98,7 @@ function App() {
         <Route exact path="/allLead" element={<AllLead />} />
         <Route exact path="/myclient" element={<Myclient />} />
         <Route exact path="/Allclient" element={<AllClient />} />
+        <Route exact path="/shopactdetails" element={<ShopActp />} />
         <Route exact path="/mylead/service/:service" element={<Myleadtbloutter />} />
         <Route exact path="/allLead/service/:service" element={<AllLeadtable />} />
         <Route exact path="/transferlead/:id" element={<Transferlead />} />

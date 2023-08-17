@@ -66,7 +66,7 @@ const Updateform = ({ Profiledata, id }) => {
 
     await axios({
       method: "patch",
-      url: `https://api.solutionsathee.com/api/v1/crm/updateempolyee/${id}`,
+      url: `http://localhost:5000/api/v1/crm/updateempolyee/${id}`,
       data: {
         first_name: first_name,
         last_name: last_name,

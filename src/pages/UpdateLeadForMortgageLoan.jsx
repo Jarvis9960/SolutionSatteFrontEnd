@@ -45,7 +45,7 @@ const Mortgage = () => {
     try {
       axios({
         method: "get",
-        url: `https://api.solutionsathee.com/api/v1/crm/getmortgageloanbyid?mortgageLoanId=${serviceID}`,
+        url: `http://localhost:5000/api/v1/crm/getmortgageloanbyid?mortgageLoanId=${serviceID}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -77,7 +77,7 @@ const Mortgage = () => {
 
       const editedResponse = await axios({
         method: "patch",
-        url: "https://api.solutionsathee.com/api/v1/crm/updatemortgageloan",
+        url: "http://localhost:5000/api/v1/crm/updatemortgageloan",
         data: formData,
         headers: {
           Authorization: `Bearer ${token}`,
@@ -184,7 +184,7 @@ const Mortgage = () => {
                       <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                         {popupdata.hasOwnProperty("itReturns") && (
                           <img
-                            src={`https://api.solutionsathee.com/${popupdata.itReturns
+                            src={`http://localhost:5000/${popupdata.itReturns
                               .split("public")[1]
                               .substring(1)}`}
                             alt=""
@@ -228,7 +228,7 @@ const Mortgage = () => {
                       <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                         {popupdata.hasOwnProperty("latestSalarySlip") && (
                           <img
-                            src={`https://api.solutionsathee.com/${popupdata.latestSalarySlip
+                            src={`http://localhost:5000/${popupdata.latestSalarySlip
                               .split("public")[1]
                               .substring(1)}`}
                             alt=""
@@ -274,7 +274,7 @@ const Mortgage = () => {
                       <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                         {popupdata.hasOwnProperty("threeMonthsBankStatement") && (
                           <img
-                            src={`https://api.solutionsathee.com/${popupdata.threeMonthsBankStatement
+                            src={`http://localhost:5000/${popupdata.threeMonthsBankStatement
                               .split("public")[1]
                               .substring(1)}`}
                             alt=""
@@ -321,7 +321,7 @@ const Mortgage = () => {
                       <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                         {popupdata.hasOwnProperty("panCard") && (
                           <img
-                            src={`https://api.solutionsathee.com/${popupdata.panCard
+                            src={`http://localhost:5000/${popupdata.panCard
                               .split("public")[1]
                               .substring(1)}`}
                             alt=""
@@ -363,7 +363,7 @@ const Mortgage = () => {
                       <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                         {popupdata.hasOwnProperty("idProof") && (
                           <img
-                            src={`https://api.solutionsathee.com/${popupdata.idProof
+                            src={`http://localhost:5000/${popupdata.idProof
                               .split("public")[1]
                               .substring(1)}`}
                             alt=""
@@ -407,7 +407,7 @@ const Mortgage = () => {
                       <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                         {popupdata.hasOwnProperty("addressProof") && (
                           <img
-                            src={`https://api.solutionsathee.com/${popupdata.addressProof
+                            src={`http://localhost:5000/${popupdata.addressProof
                               .split("public")[1]
                               .substring(1)}`}
                             alt=""
@@ -451,7 +451,7 @@ const Mortgage = () => {
                           "documentOfThePropertyTobeMortgage"
                         ) && (
                             <img
-                              src={`https://api.solutionsathee.com/${popupdata.documentOfThePropertyTobeMortgage
+                              src={`http://localhost:5000/${popupdata.documentOfThePropertyTobeMortgage
                                 .split("public")[1]
                                 .substring(1)}`}
                               alt=""

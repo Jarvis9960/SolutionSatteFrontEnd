@@ -63,7 +63,7 @@ const Shop = () => {
 
       const leadApiCall = await axios({
         method: "post",
-        url: "https://api.solutionsathee.com/api/v1/crm/createleadforshopact",
+        url: "http://localhost:5000/api/v1/crm/createleadforshopact",
         data: formData,
         headers: {
           Authorization: `Bearer ${token}`,

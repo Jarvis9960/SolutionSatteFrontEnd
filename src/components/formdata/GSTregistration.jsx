@@ -110,7 +110,7 @@ const GSTregistration = () => {
 
       const leadApiCall = await axios({
         method: "post",
-        url: "https://api.solutionsathee.com/api/v1/crm/createleadforgstregistration",
+        url: "http://localhost:5000/api/v1/crm/createleadforgstregistration",
         data: formData,
         headers: {
           Authorization: `Bearer ${token}`,

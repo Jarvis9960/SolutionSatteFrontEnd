@@ -47,7 +47,7 @@ function Myleadtbloutter() {
     setloading(true)
     axios({
       method: "get",
-      url: "https://api.solutionsathee.com/api/v1/crm/getEmpolyeeID",
+      url: "http://localhost:5000/api/v1/crm/getEmpolyeeID",
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -66,7 +66,7 @@ function Myleadtbloutter() {
       if (service === "Personal Loan") {
         await axios({
           method: "get",
-          url: "https://api.solutionsathee.com/api/v1/crm/getpersonalloanforemployee",
+          url: "http://localhost:5000/api/v1/crm/getpersonalloanforemployee",
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -77,7 +77,7 @@ function Myleadtbloutter() {
       if (service === "Business Loan") {
         await axios({
           method: "get",
-          url: `https://api.solutionsathee.com/api/v1/crm/getbusinessloanforemployee`,
+          url: `http://localhost:5000/api/v1/crm/getbusinessloanforemployee`,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -88,7 +88,7 @@ function Myleadtbloutter() {
       if (service === "Mortgage  Loan") {
         await axios({
           method: "get",
-          url: "https://api.solutionsathee.com/api/v1/crm/getmortgageloanforemployee",
+          url: "http://localhost:5000/api/v1/crm/getmortgageloanforemployee",
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -99,7 +99,7 @@ function Myleadtbloutter() {
       if (service === "Home  Loan") {
         await axios({
           method: "get",
-          url: "https://api.solutionsathee.com/api/v1/crm/gethomeloanforemployee",
+          url: "http://localhost:5000/api/v1/crm/gethomeloanforemployee",
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -110,7 +110,7 @@ function Myleadtbloutter() {
       if (service === "Home Loan Balance Transfer") {
         await axios({
           method: "get",
-          url: "https://api.solutionsathee.com/api/v1/crm/gethomeloanforemployee",
+          url: "http://localhost:5000/api/v1/crm/gethomeloanforemployee",
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -121,7 +121,7 @@ function Myleadtbloutter() {
       if (service === "Gold Loan") {
         await axios({
           method: "get",
-          url: "https://api.solutionsathee.com/api/v1/crm/getgoldloanforemployee",
+          url: "http://localhost:5000/api/v1/crm/getgoldloanforemployee",
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -132,7 +132,7 @@ function Myleadtbloutter() {
       if (service === "Credit Card") {
         await axios({
           method: "get",
-          url: "https://api.solutionsathee.com/api/v1/crm/getcreditcardforemployee",
+          url: "http://localhost:5000/api/v1/crm/getcreditcardforemployee",
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -143,7 +143,7 @@ function Myleadtbloutter() {
       if (service === "New Correction Pan application") {
         await axios({
           method: "get",
-          url: "https://api.solutionsathee.com/api/v1/crm/getnewcorrectionpanapplicationforemployee",
+          url: "http://localhost:5000/api/v1/crm/getnewcorrectionpanapplicationforemployee",
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -154,7 +154,7 @@ function Myleadtbloutter() {
       if (service === "Shop Act") {
         await axios({
           method: "get",
-          url: "https://api.solutionsathee.com/api/v1/crm/getshopactforemployee",
+          url: "http://localhost:5000/api/v1/crm/getshopactforemployee",
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -165,7 +165,7 @@ function Myleadtbloutter() {
       if (service === "Passport") {
         await axios({
           method: "get",
-          url: "https://api.solutionsathee.com/api/v1/crm/getpassportforemployee",
+          url: "http://localhost:5000/api/v1/crm/getpassportforemployee",
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -176,7 +176,7 @@ function Myleadtbloutter() {
       if (service === "GST registration application") {
         await axios({
           method: "get",
-          url: "https://api.solutionsathee.com/api/v1/crm/getGSTRegistrationforemployee",
+          url: "http://localhost:5000/api/v1/crm/getGSTRegistrationforemployee",
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -187,7 +187,7 @@ function Myleadtbloutter() {
       if (service === "UDYAM Registration") {
         await axios({
           method: "get",
-          url: "https://api.solutionsathee.com/api/v1/crm/getudyamcertificateforemployee",
+          url: "http://localhost:5000/api/v1/crm/getudyamcertificateforemployee",
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -198,7 +198,7 @@ function Myleadtbloutter() {
       if (service === "Car Loan") {
         await axios({
           method: "get",
-          url: "https://api.solutionsathee.com/api/v1/crm/getcarloanforemployee",
+          url: "http://localhost:5000/api/v1/crm/getcarloanforemployee",
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -209,7 +209,7 @@ function Myleadtbloutter() {
       if (service === "Food Lisence") {
         await axios({
           method: "get",
-          url: "https://api.solutionsathee.com/api/v1/crm/getfoodlisenceoremployee",
+          url: "http://localhost:5000/api/v1/crm/getfoodlisenceoremployee",
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -225,7 +225,7 @@ function Myleadtbloutter() {
     if (service === "Personal Loan") {
       await axios({
         method: "get",
-        url: `https://api.solutionsathee.com/api/v1/crm/getpersonalloanbymobile?mobileNo=${number}`,
+        url: `http://localhost:5000/api/v1/crm/getpersonalloanbymobile?mobileNo=${number}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -240,7 +240,7 @@ function Myleadtbloutter() {
     if (service === "Business Loan") {
       await axios({
         method: "get",
-        url: `https://api.solutionsathee.com/api/v1/crm/getbusinessloanbymobile?mobileNo=${number}`,
+        url: `http://localhost:5000/api/v1/crm/getbusinessloanbymobile?mobileNo=${number}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -255,7 +255,7 @@ function Myleadtbloutter() {
     if (service === "Mortgage  Loan") {
       await axios({
         method: "get",
-        url: `https://api.solutionsathee.com/api/v1/crm/getmortgageloanbymobile?mobileNo=${number}`,
+        url: `http://localhost:5000/api/v1/crm/getmortgageloanbymobile?mobileNo=${number}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -270,7 +270,7 @@ function Myleadtbloutter() {
     if (service === "Home  Loan") {
       await axios({
         method: "get",
-        url: `https://api.solutionsathee.com/api/v1/crm/gethomeloanbymobile?mobileNo=${number}`,
+        url: `http://localhost:5000/api/v1/crm/gethomeloanbymobile?mobileNo=${number}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -284,7 +284,7 @@ function Myleadtbloutter() {
     if (service === "Home Loan Balance Transfer") {
       await axios({
         method: "get",
-        url: `https://api.solutionsathee.com/api/v1/crm/gethomeloanbymobile?mobileNo=${number}`,
+        url: `http://localhost:5000/api/v1/crm/gethomeloanbymobile?mobileNo=${number}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -300,7 +300,7 @@ function Myleadtbloutter() {
       try {
         axios({
           method: "get",
-          url: `https://api.solutionsathee.com/api/v1/crm/getgoldloanbymobile?mobileNo=${number}`,
+          url: `http://localhost:5000/api/v1/crm/getgoldloanbymobile?mobileNo=${number}`,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -317,7 +317,7 @@ function Myleadtbloutter() {
     if (service === "Credit Card") {
       await axios({
         method: "get",
-        url: `https://api.solutionsathee.com/api/v1/crm/getcreditcardloanbymobile?mobileNo=${number}`,
+        url: `http://localhost:5000/api/v1/crm/getcreditcardloanbymobile?mobileNo=${number}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -332,7 +332,7 @@ function Myleadtbloutter() {
     if (service === "New Correction Pan application") {
       await axios({
         method: "get",
-        url: `https://api.solutionsathee.com/api/v1/crm/getnewcorrectionpanapplicationbymobile?mobileNo=${number}`,
+        url: `http://localhost:5000/api/v1/crm/getnewcorrectionpanapplicationbymobile?mobileNo=${number}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -347,7 +347,7 @@ function Myleadtbloutter() {
     if (service === "Shop Act") {
       await axios({
         method: "get",
-        url: `https://api.solutionsathee.com/api/v1/crm/getshopactbymobile?mobileNo=${number}`,
+        url: `http://localhost:5000/api/v1/crm/getshopactbymobile?mobileNo=${number}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -362,7 +362,7 @@ function Myleadtbloutter() {
     if (service === "Passport") {
       await axios({
         method: "get",
-        url: `https://api.solutionsathee.com/api/v1/crm/getpassportbymobile?mobileNo=${number}`,
+        url: `http://localhost:5000/api/v1/crm/getpassportbymobile?mobileNo=${number}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -377,7 +377,7 @@ function Myleadtbloutter() {
     if (service === "GST registration application") {
       await axios({
         method: "get",
-        url: `https://api.solutionsathee.com/api/v1/crm/getgstregistrationbymobile?mobileNo=${number}`,
+        url: `http://localhost:5000/api/v1/crm/getgstregistrationbymobile?mobileNo=${number}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -392,7 +392,7 @@ function Myleadtbloutter() {
     if (service === "UDYAM Registration") {
       await axios({
         method: "get",
-        url: `https://api.solutionsathee.com/api/v1/crm/getudyamcertificatebymobile?mobileNo=${number}`,
+        url: `http://localhost:5000/api/v1/crm/getudyamcertificatebymobile?mobileNo=${number}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -407,7 +407,7 @@ function Myleadtbloutter() {
     if (service === "Car Loan") {
       await axios({
         method: "get",
-        url: `https://api.solutionsathee.com/api/v1/crm/getcarloanbymobile?mobileNo=${number}`,
+        url: `http://localhost:5000/api/v1/crm/getcarloanbymobile?mobileNo=${number}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -422,7 +422,7 @@ function Myleadtbloutter() {
     if (service === "Food Lisence") {
       await axios({
         method: "get",
-        url: `https://api.solutionsathee.com/api/v1/crm/getfoodlisencebymobilenumber?mobileNo=${number}`,
+        url: `http://localhost:5000/api/v1/crm/getfoodlisencebymobilenumber?mobileNo=${number}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },

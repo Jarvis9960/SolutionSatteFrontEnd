@@ -101,13 +101,13 @@ function Dashboard() {
       setArr();
     } else {
     }
-    fetch("https://api.solutionsathee.com/api/v1/crm/getallemployee");
+    fetch("http://localhost:5000/api/v1/crm/getallemployee");
   };
 
   useEffect(() => {
     (async function () {
       await axios
-        .get("https://api.solutionsathee.com/api/v1/crm/getallemployee")
+        .get("http://localhost:5000/api/v1/crm/getallemployee")
         .then((res) => {
           setData(res.data.fetchdata);
           setEmpId(res.data.fetchdata);
@@ -118,7 +118,7 @@ function Dashboard() {
   useEffect(() => {
     axios({
       method: "get",
-      url: `https://api.solutionsathee.com/api/v1/crm/getmisreportofleads?FromDate=${fromdate}&Todate=${todate}`,
+      url: `http://localhost:5000/api/v1/crm/getmisreportofleads?FromDate=${fromdate}&Todate=${todate}`,
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -128,7 +128,7 @@ function Dashboard() {
 
     axios({
       method: "get",
-      url: `https://api.solutionsathee.com/api/v1/crm/getmistabledata`,
+      url: `http://localhost:5000/api/v1/crm/getmistabledata`,
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -140,7 +140,7 @@ function Dashboard() {
   const handleFormSubmit = () => {
     axios({
       method: "get",
-      url: `https://api.solutionsathee.com/api/v1/crm/getmisreportofleads?FromDate=${fromdate}&Todate=${todate}`,
+      url: `http://localhost:5000/api/v1/crm/getmisreportofleads?FromDate=${fromdate}&Todate=${todate}`,
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -151,7 +151,7 @@ function Dashboard() {
 
     axios({
       method: "get",
-      url: `https://api.solutionsathee.com/api/v1/crm/getmistabledata`,
+      url: `http://localhost:5000/api/v1/crm/getmistabledata`,
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -178,7 +178,7 @@ function Dashboard() {
     }
 
     axios
-      .get(`https://api.solutionsathee.com/api/v1/crm${apiUrl}`, {
+      .get(`http://localhost:5000/api/v1/crm${apiUrl}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

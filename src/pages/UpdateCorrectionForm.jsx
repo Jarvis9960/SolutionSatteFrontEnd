@@ -31,7 +31,7 @@ const UpdateCorrectionForm = () => {
     try {
       axios({
         method: "get",
-        url: `https://api.solutionsathee.com/api/v1/crm/getnewcorrectionpanapplicationforadminbyId?getNewCorrectionPanApplicationbyId=${serviceID}`,
+        url: `http://localhost:5000/api/v1/crm/getnewcorrectionpanapplicationforadminbyId?getNewCorrectionPanApplicationbyId=${serviceID}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -54,7 +54,7 @@ const UpdateCorrectionForm = () => {
 
       const editedResponse = await axios({
         method: "patch",
-        url: "https://api.solutionsathee.com/api/v1/crm/updatenewcorrectionpanapplication",
+        url: "http://localhost:5000/api/v1/crm/updatenewcorrectionpanapplication",
         data: formData,
         headers: {
           Authorization: `Bearer ${token}`,
@@ -169,7 +169,7 @@ const UpdateCorrectionForm = () => {
                   <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     {popupdata.hasOwnProperty("ProofOfIdentity") && (
                       <img
-                        src={`https://api.solutionsathee.com/${popupdata.ProofOfIdentity.split(
+                        src={`http://localhost:5000/${popupdata.ProofOfIdentity.split(
                           "public"
                         )[1].substring(1)}`}
                         alt=""
@@ -217,7 +217,7 @@ const UpdateCorrectionForm = () => {
                   <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     {popupdata.hasOwnProperty("ProofOfResidency") && (
                       <img
-                        src={`https://api.solutionsathee.com/${popupdata.ProofOfResidency.split(
+                        src={`http://localhost:5000/${popupdata.ProofOfResidency.split(
                           "public"
                         )[1].substring(1)}`}
                         alt=""
@@ -265,7 +265,7 @@ const UpdateCorrectionForm = () => {
                   <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     {popupdata.hasOwnProperty("DateofBirthProof") && (
                       <img
-                        src={`https://api.solutionsathee.com/${popupdata.DateofBirthProof.split(
+                        src={`http://localhost:5000/${popupdata.DateofBirthProof.split(
                           "public"
                         )[1].substring(1)}`}
                         alt=""

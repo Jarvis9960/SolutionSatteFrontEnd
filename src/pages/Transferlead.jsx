@@ -55,7 +55,7 @@ const Transferlead = () => {
   const fetchdata = async () => {
     await axios({
       method: "get",
-      url: `https://api.solutionsathee.com/api/v1/crm/getallemployee`,
+      url: `http://localhost:5000/api/v1/crm/getallemployee`,
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -71,7 +71,7 @@ const Transferlead = () => {
       if (service === "Personal Loan") {
         await axios({
           method: "patch",
-          url: `https://api.solutionsathee.com/api/v1/crm/transferpersonallead?leadId=${serviceID}&employeeId=${newempolyee}`,
+          url: `http://localhost:5000/api/v1/crm/transferpersonallead?leadId=${serviceID}&employeeId=${newempolyee}`,
           data: newempolyee,
           headers: {
             Authorization: `Bearer ${token}`,
@@ -90,7 +90,7 @@ const Transferlead = () => {
       if (service === "Business Loan") {
         await axios({
           method: "patch",
-          url: `https://api.solutionsathee.com/api/v1/crm/transferbusinesslead?leadId=${serviceID}&employeeId=${newempolyee}`,
+          url: `http://localhost:5000/api/v1/crm/transferbusinesslead?leadId=${serviceID}&employeeId=${newempolyee}`,
           data: newempolyee,
           headers: {
             Authorization: `Bearer ${token}`,
@@ -109,7 +109,7 @@ const Transferlead = () => {
       if (service === "Mortgage  Loan") {
         await axios({
           method: "patch",
-          url: `https://api.solutionsathee.com/api/v1/crm/transfermortgagelead?leadId=${serviceID}&employeeId=${newempolyee}`,
+          url: `http://localhost:5000/api/v1/crm/transfermortgagelead?leadId=${serviceID}&employeeId=${newempolyee}`,
           data: newempolyee,
           headers: {
             Authorization: `Bearer ${token}`,
@@ -128,7 +128,7 @@ const Transferlead = () => {
       if (service === "Home  Loan") {
         await axios({
           method: "patch",
-          url: `https://api.solutionsathee.com/api/v1/crm/transferhomelead?leadId=${serviceID}&employeeId=${newempolyee}`,
+          url: `http://localhost:5000/api/v1/crm/transferhomelead?leadId=${serviceID}&employeeId=${newempolyee}`,
           data: newempolyee,
           headers: {
             Authorization: `Bearer ${token}`,
@@ -147,7 +147,7 @@ const Transferlead = () => {
       if (service === "Home Loan Balance Transfer") {
         await axios({
           method: "patch",
-          url: `https://api.solutionsathee.com/api/v1/crm/transferhomelead?leadId=${serviceID}&employeeId=${newempolyee}`,
+          url: `http://localhost:5000/api/v1/crm/transferhomelead?leadId=${serviceID}&employeeId=${newempolyee}`,
           data: newempolyee,
           headers: {
             Authorization: `Bearer ${token}`,
@@ -166,7 +166,7 @@ const Transferlead = () => {
       if (service === "Gold Loan") {
           axios({
             method: "patch",
-            url: `https://api.solutionsathee.com/api/v1/crm/transfergoldlead?leadId=${serviceID}&employeeId=${newempolyee}`,
+            url: `http://localhost:5000/api/v1/crm/transfergoldlead?leadId=${serviceID}&employeeId=${newempolyee}`,
             data: newempolyee,
             headers: {
               Authorization: `Bearer ${token}`,
@@ -185,7 +185,7 @@ const Transferlead = () => {
       if (service === "Credit Card") {
         await axios({
           method: "patch",
-          url: `https://api.solutionsathee.com/api/v1/crm/transfercreditcardlead?leadId=${serviceID}&employeeId=${newempolyee}`,
+          url: `http://localhost:5000/api/v1/crm/transfercreditcardlead?leadId=${serviceID}&employeeId=${newempolyee}`,
           data: newempolyee,
           headers: {
             Authorization: `Bearer ${token}`,
@@ -204,7 +204,7 @@ const Transferlead = () => {
       if (service === "New Correction Pan application") {
         await axios({
           method: "patch",
-          url: `https://api.solutionsathee.com/api/v1/crm/transfernewcorrectionpanapplication?leadId=${serviceID}&employeeId=${newempolyee}`,
+          url: `http://localhost:5000/api/v1/crm/transfernewcorrectionpanapplication?leadId=${serviceID}&employeeId=${newempolyee}`,
           data: newempolyee,
           headers: {
             Authorization: `Bearer ${token}`,
@@ -223,7 +223,7 @@ const Transferlead = () => {
       if (service === "Shop Act") {
         await axios({
           method: "patch",
-          url: `https://api.solutionsathee.com/api/v1/crm/transfershopactlead?leadId=${serviceID}&employeeId=${newempolyee}`,
+          url: `http://localhost:5000/api/v1/crm/transfershopactlead?leadId=${serviceID}&employeeId=${newempolyee}`,
           data: newempolyee,
           headers: {
             Authorization: `Bearer ${token}`,
@@ -242,7 +242,7 @@ const Transferlead = () => {
       if (service === "passport") {
         await axios({
           method: "patch",
-          url: `https://api.solutionsathee.com/api/v1/crm/transferpassportlead?leadId=${serviceID}&employeeId=${newempolyee}`,
+          url: `http://localhost:5000/api/v1/crm/transferpassportlead?leadId=${serviceID}&employeeId=${newempolyee}`,
           data: newempolyee,
           headers: {
             Authorization: `Bearer ${token}`,
@@ -261,7 +261,7 @@ const Transferlead = () => {
       if (service === "GST registration application") {
         await axios({
           method: "patch",
-          url: `https://api.solutionsathee.com/api/v1/crm/transferGSTlead?leadId=${serviceID}&employeeId=${newempolyee}`,
+          url: `http://localhost:5000/api/v1/crm/transferGSTlead?leadId=${serviceID}&employeeId=${newempolyee}`,
           data: newempolyee,
           headers: {
             Authorization: `Bearer ${token}`,
@@ -280,7 +280,7 @@ const Transferlead = () => {
       if (service === "UDYAM Registration") {
         await axios({
           method: "patch",
-          url: `https://api.solutionsathee.com/api/v1/crm/transferudyamcertificate?leadId=${serviceID}&employeeId=${newempolyee}`,
+          url: `http://localhost:5000/api/v1/crm/transferudyamcertificate?leadId=${serviceID}&employeeId=${newempolyee}`,
           data: newempolyee,
           headers: {
             Authorization: `Bearer ${token}`,
@@ -299,7 +299,7 @@ const Transferlead = () => {
       if (service === "Car Loan") {
         await axios({
           method: "patch",
-          url: `https://api.solutionsathee.com/api/v1/crm/transfercarlead?leadId=${serviceID}&employeeId=${newempolyee}`,
+          url: `http://localhost:5000/api/v1/crm/transfercarlead?leadId=${serviceID}&employeeId=${newempolyee}`,
           data: newempolyee,
           headers: {
             Authorization: `Bearer ${token}`,
@@ -318,7 +318,7 @@ const Transferlead = () => {
       if (service === "Food Lisence") {
         await axios({
           method: "patch",
-          url: `https://api.solutionsathee.com/api/v1/crm/transferfoodlisencelead?leadId=${serviceID}&employeeId=${newempolyee}`,
+          url: `http://localhost:5000/api/v1/crm/transferfoodlisencelead?leadId=${serviceID}&employeeId=${newempolyee}`,
           data: newempolyee,
           headers: {
             Authorization: `Bearer ${token}`,

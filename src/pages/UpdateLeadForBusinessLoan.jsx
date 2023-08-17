@@ -64,7 +64,7 @@ const Business = () => {
     try {
       axios({
         method: "get",
-        url: `https://api.solutionsathee.com/api/v1/crm/getbusinessloanbyid?businessLoanId=${serviceID}`,
+        url: `http://localhost:5000/api/v1/crm/getbusinessloanbyid?businessLoanId=${serviceID}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -115,7 +115,7 @@ const Business = () => {
 
       const editedResponse = await axios({
         method: "patch",
-        url: "https://api.solutionsathee.com/api/v1/crm/updatebusinessloan",
+        url: "http://localhost:5000/api/v1/crm/updatebusinessloan",
         data: formData,
         headers: {
           Authorization: `Bearer ${token}`,
@@ -218,7 +218,7 @@ const Business = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("TrueCopyArticleofAssociation") && (
               <img
-                src={`https://api.solutionsathee.com/${popupdata.TrueCopyArticleofAssociation.split(
+                src={`http://localhost:5000/${popupdata.TrueCopyArticleofAssociation.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""
@@ -262,7 +262,7 @@ const Business = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("PanCard") && (
               <img
-                src={`https://api.solutionsathee.com/${popupdata.PanCard.split(
+                src={`http://localhost:5000/${popupdata.PanCard.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""
@@ -304,7 +304,7 @@ const Business = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("IdentityProof") && (
               <img
-                src={`https://api.solutionsathee.com/${popupdata.IdentityProof.split(
+                src={`http://localhost:5000/${popupdata.IdentityProof.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""
@@ -348,7 +348,7 @@ const Business = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("AddressProof") && (
               <img
-                src={`https://api.solutionsathee.com/${popupdata.AddressProof.split(
+                src={`http://localhost:5000/${popupdata.AddressProof.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""
@@ -390,7 +390,7 @@ const Business = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("SixMonthBankStatement") && (
               <img
-                src={`https://api.solutionsathee.com/${popupdata.SixMonthBankStatement.split(
+                src={`http://localhost:5000/${popupdata.SixMonthBankStatement.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""
@@ -434,7 +434,7 @@ const Business = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("LatestITR") && (
               <img
-                src={`https://api.solutionsathee.com/${popupdata.LatestITR.split(
+                src={`http://localhost:5000/${popupdata.LatestITR.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""
@@ -476,7 +476,7 @@ const Business = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("ProofOfContinuationITR") && (
               <img
-                src={`https://api.solutionsathee.com/${popupdata.ProofOfContinuationITR.split(
+                src={`http://localhost:5000/${popupdata.ProofOfContinuationITR.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""
@@ -520,7 +520,7 @@ const Business = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("ProofOfContinuationTradeLiscense") && (
               <img
-                src={`https://api.solutionsathee.com/${popupdata.ProofOfContinuationTradeLiscense.split(
+                src={`http://localhost:5000/${popupdata.ProofOfContinuationTradeLiscense.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""
@@ -562,7 +562,7 @@ const Business = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("ProofOfContinuationEstablishment") && (
               <img
-                src={`https://api.solutionsathee.com/${popupdata.ProofOfContinuationEstablishment.split(
+                src={`http://localhost:5000/${popupdata.ProofOfContinuationEstablishment.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""
@@ -609,7 +609,7 @@ const Business = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("ProofOfContinuationSalesTax") && (
               <img
-                src={`https://api.solutionsathee.com/${popupdata.ProofOfContinuationSalesTax.split(
+                src={`http://localhost:5000/${popupdata.ProofOfContinuationSalesTax.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""
@@ -651,7 +651,7 @@ const Business = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("PropDeclaration") && (
               <img
-                src={`https://api.solutionsathee.com/${popupdata.PropDeclaration.split(
+                src={`http://localhost:5000/${popupdata.PropDeclaration.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""
@@ -698,7 +698,7 @@ const Business = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("PartnershipDeed") && (
               <img
-                src={`https://api.solutionsathee.com/${popupdata.PartnershipDeed.split(
+                src={`http://localhost:5000/${popupdata.PartnershipDeed.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""
@@ -740,7 +740,7 @@ const Business = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("TrueCopyBoardResolution") && (
               <img
-                src={`https://api.solutionsathee.com/${popupdata.TrueCopyBoardResolution.split(
+                src={`http://localhost:5000/${popupdata.TrueCopyBoardResolution.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""

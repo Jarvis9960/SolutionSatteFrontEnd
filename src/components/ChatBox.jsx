@@ -36,7 +36,7 @@ const Chat = ({ LeadId, employeeId, LeadModel }) => {
         };
 
         const response = await axios.post(
-          'https://api.solutionsathee.com/api/v1/crm/addcommenttolead',
+          'http://localhost:5000/api/v1/crm/addcommenttolead',
           newComment,
           {
             headers: {
@@ -56,7 +56,7 @@ const Chat = ({ LeadId, employeeId, LeadModel }) => {
   const fetchCommentsForLead = async () => {
     try {
       const response = await axios.get(
-        `https://api.solutionsathee.com/api/v1/crm/getcommentoflead?leadId=${LeadId}`,
+        `http://localhost:5000/api/v1/crm/getcommentoflead?leadId=${LeadId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

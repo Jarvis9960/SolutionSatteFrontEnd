@@ -111,7 +111,7 @@ const Addleads = () => {
       try {
         axios({
           method: "get",
-          url: "https://api.solutionsathee.com/api/v1/crm/getservice",
+          url: "http://localhost:5000/api/v1/crm/getservice",
           headers: {
             Authorization: `Bearer ${token}`,
           },

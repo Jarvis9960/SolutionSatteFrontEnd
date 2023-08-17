@@ -45,7 +45,7 @@ const Shop = () => {
     try {
       axios({
         method: "get",
-        url: `https://api.solutionsathee.com/api/v1/crm/getshopactbyid?shopActId=${serviceID}`,
+        url: `http://localhost:5000/api/v1/crm/getshopactbyid?shopActId=${serviceID}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -75,7 +75,7 @@ const Shop = () => {
 
       const editedResponse = await axios({
         method: "patch",
-        url: "https://api.solutionsathee.com/api/v1/crm/updateshopact",
+        url: "http://localhost:5000/api/v1/crm/updateshopact",
         data: formData,
         headers: {
           Authorization: `Bearer ${token}`,
@@ -190,7 +190,7 @@ const Shop = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("PanCard") && (
               <img
-                src={`https://api.solutionsathee.com/${popupdata.PanCard.split(
+                src={`http://localhost:5000/${popupdata.PanCard.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""
@@ -232,7 +232,7 @@ const Shop = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("AdharCard") && (
               <img
-                src={`https://api.solutionsathee.com/${popupdata.AdharCard.split(
+                src={`http://localhost:5000/${popupdata.AdharCard.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""
@@ -324,7 +324,7 @@ const Shop = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("ElectricityBill") && (
               <img
-                src={`https://api.solutionsathee.com/${popupdata.ElectricityBill.split(
+                src={`http://localhost:5000/${popupdata.ElectricityBill.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""
@@ -366,7 +366,7 @@ const Shop = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("RentAgreement") && (
               <img
-                src={`https://api.solutionsathee.com/${popupdata.RentAgreement.split(
+                src={`http://localhost:5000/${popupdata.RentAgreement.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""
@@ -410,7 +410,7 @@ const Shop = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("MOA") && (
               <img
-                src={`https://api.solutionsathee.com/${popupdata.MOA.split(
+                src={`http://localhost:5000/${popupdata.MOA.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""
@@ -452,7 +452,7 @@ const Shop = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("AON") && (
               <img
-                src={`https://api.solutionsathee.com/${popupdata.AON.split(
+                src={`http://localhost:5000/${popupdata.AON.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""
@@ -496,7 +496,7 @@ const Shop = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("CIN") && (
               <img
-                src={`https://api.solutionsathee.com/${popupdata.CIN.split(
+                src={`http://localhost:5000/${popupdata.CIN.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""

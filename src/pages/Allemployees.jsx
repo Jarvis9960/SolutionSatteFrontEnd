@@ -45,7 +45,7 @@ const Allemployees = () => {
   const Searchbynum = async () => {
     await axios({
       method: "get",
-      url: `https://api.solutionsathee.com/api/v1/crm/getemployeebyIdNum?employeeId=${number}`,
+      url: `http://localhost:5000/api/v1/crm/getemployeebyIdNum?employeeId=${number}`,
       headers: {
         Authorization: `Bearer ${token}`,
       },

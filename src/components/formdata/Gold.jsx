@@ -44,7 +44,7 @@ const Gold = () => {
 
       const leadApiCall = await axios({
         method: "post",
-        url: "https://api.solutionsathee.com/api/v1/crm/createleadforGoldloan",
+        url: "http://localhost:5000/api/v1/crm/createleadforGoldloan",
         data: formData,
         headers: {
           Authorization: `Bearer ${token}`,

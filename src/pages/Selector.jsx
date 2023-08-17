@@ -17,7 +17,7 @@ function Selector({setEmployeeId}) {
   useEffect(() => {
 
     (async function() {
-      await axios.get("https://api.solutionsathee.com/api/v1/crm/getallemployee").then((res) => {
+      await axios.get("http://localhost:5000/api/v1/crm/getallemployee").then((res) => {
       setData(res.data.fetchdata);
       setEmpId(res.data.fetchdata);
     });

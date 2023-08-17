@@ -67,7 +67,7 @@ const MyleadTable = ({ loandetail, length }) => {
       if (serviceName === "Personal Loan") {
         await axios({
           method: "patch",
-          url: `https://api.solutionsathee.com/api/v1/crm/updatepersonalloanPDS?LoanId=${id}`,
+          url: `http://localhost:5000/api/v1/crm/updatepersonalloanPDS?LoanId=${id}`,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -81,7 +81,7 @@ const MyleadTable = ({ loandetail, length }) => {
       if (serviceName === "Mortgage  Loan") {
         await axios({
           method: "patch",
-          url: `https://api.solutionsathee.com/api/v1/crm/updatemortgageloanPDS?LoanId=${id}`,
+          url: `http://localhost:5000/api/v1/crm/updatemortgageloanPDS?LoanId=${id}`,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -95,7 +95,7 @@ const MyleadTable = ({ loandetail, length }) => {
       if (serviceName === "Business Loan") {
         await axios({
           method: "patch",
-          url: `https://api.solutionsathee.com/api/v1/crm/updatebusinessloanPDS?LoanId=${id}`,
+          url: `http://localhost:5000/api/v1/crm/updatebusinessloanPDS?LoanId=${id}`,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -109,7 +109,7 @@ const MyleadTable = ({ loandetail, length }) => {
       if (serviceName === "Home  Loan") {
         await axios({
           method: "patch",
-          url: `https://api.solutionsathee.com/api/v1/crm/updatehomeloanPDS?LoanId=${id}`,
+          url: `http://localhost:5000/api/v1/crm/updatehomeloanPDS?LoanId=${id}`,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -123,7 +123,7 @@ const MyleadTable = ({ loandetail, length }) => {
       if (serviceName === "Gold Loan") {
         await axios({
           method: "patch",
-          url: `https://api.solutionsathee.com/api/v1/crm/updategoldloanPDS?LoanId=${id}`,
+          url: `http://localhost:5000/api/v1/crm/updategoldloanPDS?LoanId=${id}`,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -137,7 +137,7 @@ const MyleadTable = ({ loandetail, length }) => {
       if (serviceName === "Credit Card") {
         await axios({
           method: "patch",
-          url: `https://api.solutionsathee.com/api/v1/crm/updatecreditcardPDS?LoanId=${id}`,
+          url: `http://localhost:5000/api/v1/crm/updatecreditcardPDS?LoanId=${id}`,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -151,7 +151,7 @@ const MyleadTable = ({ loandetail, length }) => {
       if (serviceName === "New Correction Pan application") {
         await axios({
           method: "patch",
-          url: `https://api.solutionsathee.com/api/v1/crm/updatenewcorrectionpanapplicationPDS?LoanId=${id}`,
+          url: `http://localhost:5000/api/v1/crm/updatenewcorrectionpanapplicationPDS?LoanId=${id}`,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -165,7 +165,7 @@ const MyleadTable = ({ loandetail, length }) => {
       if (serviceName === "Shop Act") {
         await axios({
           method: "patch",
-          url: `https://api.solutionsathee.com/api/v1/crm/updateshopactPDS?LoanId=${id}`,
+          url: `http://localhost:5000/api/v1/crm/updateshopactPDS?LoanId=${id}`,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -179,7 +179,7 @@ const MyleadTable = ({ loandetail, length }) => {
       if (serviceName === "Passport") {
         await axios({
           method: "patch",
-          url: `https://api.solutionsathee.com/api/v1/crm/updatepassportPDS?LoanId=${id}`,
+          url: `http://localhost:5000/api/v1/crm/updatepassportPDS?LoanId=${id}`,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -193,7 +193,7 @@ const MyleadTable = ({ loandetail, length }) => {
       if (serviceName === "GST registration application") {
         await axios({
           method: "patch",
-          url: `https://api.solutionsathee.com/api/v1/crm/updateGSTRegistrationPDS?LoanId=${id}`,
+          url: `http://localhost:5000/api/v1/crm/updateGSTRegistrationPDS?LoanId=${id}`,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -207,7 +207,7 @@ const MyleadTable = ({ loandetail, length }) => {
       if (serviceName === "UDYAM Registration") {
         await axios({
           method: "patch",
-          url: `https://api.solutionsathee.com/api/v1/crm/updateudyamcertificatePDS?LoanId=${id}`,
+          url: `http://localhost:5000/api/v1/crm/updateudyamcertificatePDS?LoanId=${id}`,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -221,7 +221,7 @@ const MyleadTable = ({ loandetail, length }) => {
       if (serviceName === "Car Loan") {
         await axios({
           method: "patch",
-          url: `https://api.solutionsathee.com/api/v1/crm/updatecarloanPDS?LoanId=${id}`,
+          url: `http://localhost:5000/api/v1/crm/updatecarloanPDS?LoanId=${id}`,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -235,7 +235,7 @@ const MyleadTable = ({ loandetail, length }) => {
       if (serviceName === "Food Lisence") {
         await axios({
           method: "patch",
-          url: `https://api.solutionsathee.com/api/v1/crm/updatefoodlisencePDS?LoanId=${id}`,
+          url: `http://localhost:5000/api/v1/crm/updatefoodlisencePDS?LoanId=${id}`,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -255,7 +255,7 @@ const MyleadTable = ({ loandetail, length }) => {
       if (serviceName === "Personal Loan") {
         await axios({
           method: "get",
-          url: `https://api.solutionsathee.com/api/v1/crm/getpersonalloanbyuid?personalLoanId=${id}`,
+          url: `http://localhost:5000/api/v1/crm/getpersonalloanbyuid?personalLoanId=${id}`,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -266,7 +266,7 @@ const MyleadTable = ({ loandetail, length }) => {
       if (serviceName === "Mortgage  Loan") {
         await axios({
           method: "get",
-          url: `https://api.solutionsathee.com/api/v1/crm/getmortgageloanbyid?mortgageLoanId=${id}`,
+          url: `http://localhost:5000/api/v1/crm/getmortgageloanbyid?mortgageLoanId=${id}`,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -277,7 +277,7 @@ const MyleadTable = ({ loandetail, length }) => {
       if (serviceName === "Business Loan") {
         await axios({
           method: "get",
-          url: `https://api.solutionsathee.com/api/v1/crm/getbusinessloanbyid?businessLoanId=${id}`,
+          url: `http://localhost:5000/api/v1/crm/getbusinessloanbyid?businessLoanId=${id}`,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -288,7 +288,7 @@ const MyleadTable = ({ loandetail, length }) => {
       if (serviceName === "Home  Loan") {
         await axios({
           method: "get",
-          url: `https://api.solutionsathee.com/api/v1/crm/gethomeloanbyid?homeleadID=${id}`,
+          url: `http://localhost:5000/api/v1/crm/gethomeloanbyid?homeleadID=${id}`,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -299,7 +299,7 @@ const MyleadTable = ({ loandetail, length }) => {
       if (serviceName === "Business Loan") {
         await axios({
           method: "get",
-          url: `https://api.solutionsathee.com/api/v1/crm/getbusinessloanbyid?businessLoanId=${id}`,
+          url: `http://localhost:5000/api/v1/crm/getbusinessloanbyid?businessLoanId=${id}`,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -310,7 +310,7 @@ const MyleadTable = ({ loandetail, length }) => {
       if (serviceName === "Mortgage  Loan") {
         await axios({
           method: "get",
-          url: `https://api.solutionsathee.com/api/v1/crm/getmortgageloanbyid?mortgageLoanId=${id}`,
+          url: `http://localhost:5000/api/v1/crm/getmortgageloanbyid?mortgageLoanId=${id}`,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -321,7 +321,7 @@ const MyleadTable = ({ loandetail, length }) => {
       if (serviceName === "Home  Loan") {
         await axios({
           method: "get",
-          url: `https://api.solutionsathee.com/api/v1/crm/gethomeloanbyid?homeleadID=${id}`,
+          url: `http://localhost:5000/api/v1/crm/gethomeloanbyid?homeleadID=${id}`,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -333,7 +333,7 @@ const MyleadTable = ({ loandetail, length }) => {
         console.log("gold");
         await axios({
           method: "get",
-          url: `https://api.solutionsathee.com/api/v1/crm/getgoldloanbyid?goldLoanId=${id}`,
+          url: `http://localhost:5000/api/v1/crm/getgoldloanbyid?goldLoanId=${id}`,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -344,7 +344,7 @@ const MyleadTable = ({ loandetail, length }) => {
       if (serviceName === "Credit Card") {
         await axios({
           method: "get",
-          url: `https://api.solutionsathee.com/api/v1/crm/getcreditcardbyid?creditCardId=${id}`,
+          url: `http://localhost:5000/api/v1/crm/getcreditcardbyid?creditCardId=${id}`,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -355,7 +355,7 @@ const MyleadTable = ({ loandetail, length }) => {
       if (serviceName === "New Correction Pan application") {
         await axios({
           method: "get",
-          url: `https://api.solutionsathee.com/api/v1/crm/getnewcorrectionpanapplication?newCorrectionPanApplicationId=${id}`,
+          url: `http://localhost:5000/api/v1/crm/getnewcorrectionpanapplication?newCorrectionPanApplicationId=${id}`,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -366,7 +366,7 @@ const MyleadTable = ({ loandetail, length }) => {
       if (serviceName === "Shop Act") {
         await axios({
           method: "get",
-          url: `https://api.solutionsathee.com/api/v1/crm/getshopactbyid?shopActId=${id}`,
+          url: `http://localhost:5000/api/v1/crm/getshopactbyid?shopActId=${id}`,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -377,7 +377,7 @@ const MyleadTable = ({ loandetail, length }) => {
       if (serviceName === "Passport") {
         await axios({
           method: "get",
-          url: `https://api.solutionsathee.com/api/v1/crm/getpassportbyid?passportById=${id}`,
+          url: `http://localhost:5000/api/v1/crm/getpassportbyid?passportById=${id}`,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -388,7 +388,7 @@ const MyleadTable = ({ loandetail, length }) => {
       if (serviceName === "GST registration application") {
         await axios({
           method: "get",
-          url: `https://api.solutionsathee.com/api/v1/crm/getGSTregistrationbyid?GSTRegistrationId=${id}`,
+          url: `http://localhost:5000/api/v1/crm/getGSTregistrationbyid?GSTRegistrationId=${id}`,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -399,7 +399,7 @@ const MyleadTable = ({ loandetail, length }) => {
       if (serviceName === "UDYAM Registration") {
         await axios({
           method: "get",
-          url: `https://api.solutionsathee.com/api/v1/crm/getudyamcertificatebyid?UdyamCertificateId=${id}`,
+          url: `http://localhost:5000/api/v1/crm/getudyamcertificatebyid?UdyamCertificateId=${id}`,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -410,7 +410,7 @@ const MyleadTable = ({ loandetail, length }) => {
       if (serviceName === "Car Loan") {
         await axios({
           method: "get",
-          url: `https://api.solutionsathee.com/api/v1/crm/getcarloanbyid?carLoanId=${id}`,
+          url: `http://localhost:5000/api/v1/crm/getcarloanbyid?carLoanId=${id}`,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -421,7 +421,7 @@ const MyleadTable = ({ loandetail, length }) => {
       if (serviceName === "Food Lisence") {
         await axios({
           method: "get",
-          url: `https://api.solutionsathee.com/api/v1/crm/getfoodlisencebyid?foodlisenceById=${id}`,
+          url: `http://localhost:5000/api/v1/crm/getfoodlisencebyid?foodlisenceById=${id}`,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -466,7 +466,7 @@ const MyleadTable = ({ loandetail, length }) => {
                   <h1 className="pb-2">{`${key} :-`}</h1>
                   <img
                     className="w-72"
-                    src={`https://api.solutionsathee.com/${url}`}
+                    src={`http://localhost:5000/${url}`}
                     alt=""
                     srcset=""
                   />
@@ -480,7 +480,7 @@ const MyleadTable = ({ loandetail, length }) => {
                     <h1 className="pb-2">{`${curr.fieldname} :-`}</h1>
                     <img
                       className="w-72"
-                      src={`https://api.solutionsathee.com/${curr.path
+                      src={`http://localhost:5000/${curr.path
                         .split("public")[1]
                         .substring(1)}`}
                       alt=""
@@ -519,7 +519,7 @@ const MyleadTable = ({ loandetail, length }) => {
               ) : (
                 <img
                   className="w-72"
-                  src={`https://api.solutionsathee.com/${value.split("public")[1].substring(1)}`}
+                  src={`http://localhost:5000/${value.split("public")[1].substring(1)}`}
                   alt=""
                 />
               )}
@@ -550,7 +550,7 @@ const MyleadTable = ({ loandetail, length }) => {
               <h1>{`${key} :-`}</h1>
               <img
                 className="w-72"
-                src={`https://api.solutionsathee.com/${value
+                src={`http://localhost:5000/${value
                   .split("public")[1]
                   .substring(1)}`}
                 alt=""

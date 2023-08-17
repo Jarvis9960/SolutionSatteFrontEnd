@@ -29,7 +29,7 @@ const Gold = () => {
     try {
       axios({
         method: "get",
-        url: `https://api.solutionsathee.com/api/v1/crm/getgoldloanbyid?goldLoanId=${serviceID}`,
+        url: `http://localhost:5000/api/v1/crm/getgoldloanbyid?goldLoanId=${serviceID}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -52,7 +52,7 @@ const Gold = () => {
 
       const editedResponse = await axios({
         method: "patch",
-        url: "https://api.solutionsathee.com/api/v1/crm/updategoldloan",
+        url: "http://localhost:5000/api/v1/crm/updategoldloan",
         data: formData,
         headers: {
           Authorization: `Bearer ${token}`,
@@ -166,7 +166,7 @@ const Gold = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("Aadharcard") && (
               <img
-                src={`https://api.solutionsathee.com/${popupdata.Aadharcard.split(
+                src={`http://localhost:5000/${popupdata.Aadharcard.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""
@@ -214,7 +214,7 @@ const Gold = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("Pancard") && (
               <img
-                src={`https://api.solutionsathee.com/${popupdata.Pancard.split(
+                src={`http://localhost:5000/${popupdata.Pancard.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""

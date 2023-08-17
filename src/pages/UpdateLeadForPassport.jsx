@@ -32,7 +32,7 @@ const Passport = () => {
     try {
       axios({
         method: "get",
-        url: `https://api.solutionsathee.com/api/v1/crm/getpassportbyid?passportById=${serviceID}`,
+        url: `http://localhost:5000/api/v1/crm/getpassportbyid?passportById=${serviceID}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -55,7 +55,7 @@ const Passport = () => {
 
       const editedResponse = await axios({
         method: "patch",
-        url: "https://api.solutionsathee.com/api/v1/crm/updatepassport",
+        url: "http://localhost:5000/api/v1/crm/updatepassport",
         data: formData,
         headers: {
           Authorization: `Bearer ${token}`,
@@ -171,7 +171,7 @@ const Passport = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("BirthProof") && (
               <img
-                src={`https://api.solutionsathee.com/${popupdata.BirthProof.split(
+                src={`http://localhost:5000/${popupdata.BirthProof.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""
@@ -213,7 +213,7 @@ const Passport = () => {
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             {popupdata.hasOwnProperty("AddressProof") && (
               <img
-                src={`https://api.solutionsathee.com/${popupdata.AddressProof.split(
+                src={`http://localhost:5000/${popupdata.AddressProof.split(
                   "public"
                 )[1].substring(1)}`}
                 alt=""

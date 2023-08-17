@@ -4,7 +4,7 @@ import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
-import imgFive from "../../public/Images/img5.jpg"
+import SmallLogo from "../../public/Images/smallLogo.jpeg"
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -22,15 +22,15 @@ const Navbar = () => {
 
   return (
     <div>
-      <Disclosure as="nav" className=" bg-[#172236] ">
+      <Disclosure as="nav" className=" bg-[#172236] md:bg-white sm:bg-white xs:bg-white xxs:bg-white">
         {({ open }) => (
           <>
             <div className="mx-auto  px-2   sm:px-6  w-full ">
               <div className="relative flex h-16 items-center justify-between">
                 
                 <img
-                  src={imgFive}
-                  className="absolute inset-y-2 right-1 w-14 h-14 rounded-full xl:hidden"
+                  src={SmallLogo}
+                  className="absolute inset-y-2 rounded-lg right-1 w-32 right-2 xl:hidden"
                 />
 
                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden lg:hidden xl:hidden">
@@ -55,8 +55,8 @@ const Navbar = () => {
                     <div className="hidden sm:ml-6  sm:block  lg:ml-6 xl:block xl:ml-6 lg:block">
                       <div className="flex space-x-24 justify-center items-center myDIV">
                         <img
-                          src={imgFive}
-                          className="w-16 h-16 right-20 rounded-full"
+                          src={SmallLogo}
+                          className="w-36 right-20 rounded-lg"
                           style={{ position: "relative" }}
                         />
                         <Link
@@ -102,7 +102,7 @@ const Navbar = () => {
                 <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0   lg:pr-0 lg:ml-6 lg:inset-auto lg:static xl:static xl:inset-auto xl:ml-6 ml:pr-0 ">
                   <Menu as="div" className="relative ml-3">
                     <div>
-                      <Menu.Button className="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                      <Menu.Button className="flex  bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                         <span className="sr-only">Open user menu</span>
                       </Menu.Button>
                     </div>

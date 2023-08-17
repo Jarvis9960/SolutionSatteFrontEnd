@@ -52,7 +52,7 @@ const Tableclient = () => {
     try {
       axios({
         method: "get",
-        url: "https://api.solutionsathee.com/api/v1/crm/getclientforemployee",
+        url: "http://localhost:5000/api/v1/crm/getclientforemployee",
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -73,7 +73,7 @@ const Tableclient = () => {
 
   const handleEdit = async () => {
     const response = await axios
-      .patch(`https://api.solutionsathee.com/api/v1/crm/myclient/${id}`)
+      .patch(`http://localhost:5000/api/v1/crm/myclient/${id}`)
       .catch((error) => console.log("Error: ", error));
     if (response && response.data) {
       
@@ -86,7 +86,7 @@ const Tableclient = () => {
   const singlefetch = async (id) => {
     await axios({
       method: "get",
-      url: `https://api.solutionsathee.com/api/v1/crm/getclientbyid?clientId=${id}`,
+      url: `http://localhost:5000/api/v1/crm/getclientbyid?clientId=${id}`,
       headers: {
         Authorization: `Bearer ${token}`,
       },

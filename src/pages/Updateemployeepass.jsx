@@ -24,7 +24,7 @@ const Updateemployeepass = () => {
     const fetchid= async()=>{
       const response = await axios({
         method: "get",
-        url: `https://api.solutionsathee.com/api/v1/crm/getEmpolyeeIDforadmin/${id}`,
+        url: `http://localhost:5000/api/v1/crm/getEmpolyeeIDforadmin/${id}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
