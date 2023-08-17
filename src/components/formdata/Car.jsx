@@ -98,7 +98,7 @@ const Car = () => {
 
       const leadApiCall = await axios({
         method: "post",
-        url: "http://localhost:5000/api/v1/crm/createleadforcarloan",
+        url: "https://api.solutionsathee.com/api/v1/crm/createleadforcarloan",
         data: formData,
         headers: {
           Authorization: `Bearer ${token}`,

@@ -69,7 +69,7 @@ const Car = () => {
     try {
       axios({
         method: "get",
-        url: `http://localhost:5000/api/v1/crm/getcarloanbyid?carLoanId=${serviceID}`,
+        url: `https://api.solutionsathee.com/api/v1/crm/getcarloanbyid?carLoanId=${serviceID}`,
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -117,7 +117,7 @@ const Car = () => {
 
       const editedResponse = await axios({
         method: "patch",
-        url: "http://localhost:5000/api/v1/crm/updatecarloan",
+        url: "https://api.solutionsathee.com/api/v1/crm/updatecarloan",
         data: formData,
         headers: {
           Authorization: `Bearer ${token}`,
@@ -276,7 +276,7 @@ const Car = () => {
                   <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     {popupdata.hasOwnProperty("SalariedIdentityProof") && (
                       <img
-                        src={`http://localhost:5000/${popupdata.SalariedIdentityProof.split(
+                        src={`https://api.solutionsathee.com/${popupdata.SalariedIdentityProof.split(
                           "public"
                         )[1].substring(1)}`}
                         alt=""
@@ -321,7 +321,7 @@ const Car = () => {
                   <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     {popupdata.hasOwnProperty("SalariedAddressProof") && (
                       <img
-                        src={`http://localhost:5000/${popupdata.SalariedAddressProof.split(
+                        src={`https://api.solutionsathee.com/${popupdata.SalariedAddressProof.split(
                           "public"
                         )[1].substring(1)}`}
                         alt=""
@@ -369,7 +369,7 @@ const Car = () => {
                   <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     {popupdata.hasOwnProperty("SalariedAgeProof") && (
                       <img
-                        src={`http://localhost:5000/${popupdata.SalariedAgeProof.split(
+                        src={`https://api.solutionsathee.com/${popupdata.SalariedAgeProof.split(
                           "public"
                         )[1].substring(1)}`}
                         alt=""
@@ -414,7 +414,7 @@ const Car = () => {
                   <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     {popupdata.hasOwnProperty("SalariedBankStatement") && (
                       <img
-                        src={`http://localhost:5000/${popupdata.SalariedBankStatement.split(
+                        src={`https://api.solutionsathee.com/${popupdata.SalariedBankStatement.split(
                           "public"
                         )[1].substring(1)}`}
                         alt=""
@@ -461,7 +461,7 @@ const Car = () => {
                   <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     {popupdata.hasOwnProperty("SalariedProofOfIncome") && (
                       <img
-                        src={`http://localhost:5000/${popupdata.SalariedProofOfIncome.split(
+                        src={`https://api.solutionsathee.com/${popupdata.SalariedProofOfIncome.split(
                           "public"
                         )[1].substring(1)}`}
                         alt=""
@@ -508,7 +508,7 @@ const Car = () => {
                       "SalariedSignatureVerificationProof"
                     ) && (
                       <img
-                        src={`http://localhost:5000/${popupdata.SalariedSignatureVerificationProof.split(
+                        src={`https://api.solutionsathee.com/${popupdata.SalariedSignatureVerificationProof.split(
                           "public"
                         )[1].substring(1)}`}
                         alt=""
@@ -560,7 +560,7 @@ const Car = () => {
                   <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     {popupdata.hasOwnProperty("SalariedProformaInvoice") && (
                       <img
-                        src={`http://localhost:5000/${popupdata.SalariedProformaInvoice.split(
+                        src={`https://api.solutionsathee.com/${popupdata.SalariedProformaInvoice.split(
                           "public"
                         )[1].substring(1)}`}
                         alt=""
@@ -615,7 +615,7 @@ const Car = () => {
                   <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     {popupdata.hasOwnProperty("SelfEmployedIdentityProof") && (
                       <img
-                        src={`http://localhost:5000/${popupdata.SelfEmployedIdentityProof.split(
+                        src={`https://api.solutionsathee.com/${popupdata.SelfEmployedIdentityProof.split(
                           "public"
                         )[1].substring(1)}`}
                         alt=""
@@ -660,7 +660,7 @@ const Car = () => {
                   <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     {popupdata.hasOwnProperty("SelfEmployeeAddressProof") && (
                       <img
-                        src={`http://localhost:5000/${popupdata.SelfEmployeeAddressProof.split(
+                        src={`https://api.solutionsathee.com/${popupdata.SelfEmployeeAddressProof.split(
                           "public"
                         )[1].substring(1)}`}
                         alt=""
@@ -708,7 +708,7 @@ const Car = () => {
                   <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     {popupdata.hasOwnProperty("SelfEmployeeAgeProof") && (
                       <img
-                        src={`http://localhost:5000/${popupdata.SelfEmployeeAgeProof.split(
+                        src={`https://api.solutionsathee.com/${popupdata.SelfEmployeeAgeProof.split(
                           "public"
                         )[1].substring(1)}`}
                         alt=""
@@ -753,7 +753,7 @@ const Car = () => {
                   <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     {popupdata.hasOwnProperty("SelfEmployeeBankStatement") && (
                       <img
-                        src={`http://localhost:5000/${popupdata.SelfEmployeeBankStatement.split(
+                        src={`https://api.solutionsathee.com/${popupdata.SelfEmployeeBankStatement.split(
                           "public"
                         )[1].substring(1)}`}
                         alt=""
@@ -802,7 +802,7 @@ const Car = () => {
                       "SelfEmployeeBusinessOwnership"
                     ) && (
                       <img
-                        src={`http://localhost:5000/${popupdata.SelfEmployeeBusinessOwnership.split(
+                        src={`https://api.solutionsathee.com/${popupdata.SelfEmployeeBusinessOwnership.split(
                           "public"
                         )[1].substring(1)}`}
                         alt=""
@@ -847,7 +847,7 @@ const Car = () => {
                   <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                     {popupdata.hasOwnProperty("SelfEmployeeProofOIncome") && (
                       <img
-                        src={`http://localhost:5000/${popupdata.SelfEmployeeProofOIncome.split(
+                        src={`https://api.solutionsathee.com/${popupdata.SelfEmployeeProofOIncome.split(
                           "public"
                         )[1].substring(1)}`}
                         alt=""
@@ -896,7 +896,7 @@ const Car = () => {
                       "SelfEmployeeSignatureVerification"
                     ) && (
                       <img
-                        src={`http://localhost:5000/${popupdata.SelfEmployeeSignatureVerification.split(
+                        src={`https://api.solutionsathee.com/${popupdata.SelfEmployeeSignatureVerification.split(
                           "public"
                         )[1].substring(1)}`}
                         alt=""
@@ -945,7 +945,7 @@ const Car = () => {
                       "SelfEmployeeProformaInvoice"
                     ) && (
                       <img
-                        src={`http://localhost:5000/${popupdata.SelfEmployeeProformaInvoice.split(
+                        src={`https://api.solutionsathee.com/${popupdata.SelfEmployeeProformaInvoice.split(
                           "public"
                         )[1].substring(1)}`}
                         alt=""

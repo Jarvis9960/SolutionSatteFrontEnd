@@ -26,7 +26,7 @@ const AllClient = () => {
   const Searchbynum = async () => {
     await axios({
       method: "get",
-      url: `http://localhost:5000/api/v1/crm/getclientbyNumber?phone=${number}`,
+      url: `https://api.solutionsathee.com/api/v1/crm/getclientbyNumber?phone=${number}`,
       headers: {
         Authorization: `Bearer ${token}`,
       },

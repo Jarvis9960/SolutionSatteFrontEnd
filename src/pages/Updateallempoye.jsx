@@ -26,7 +26,7 @@ const Updateallempolyee = () => {
   const fetchid= async()=>{
     const response = await axios({
       method: "get",
-      url: `http://localhost:5000/api/v1/crm/getEmpolyeeIDforadmin/${id}`,
+      url: `https://api.solutionsathee.com/api/v1/crm/getEmpolyeeIDforadmin/${id}`,
       headers: {
         Authorization: `Bearer ${token}`,
       },

@@ -64,7 +64,7 @@ const Udyam = () => {
 
       const leadApiCall = await axios({
         method: "post",
-        url: "http://localhost:5000/api/v1/crm/createleadforudyamcertificate",
+        url: "https://api.solutionsathee.com/api/v1/crm/createleadforudyamcertificate",
         data: formData,
         headers: {
           Authorization: `Bearer ${token}`,
