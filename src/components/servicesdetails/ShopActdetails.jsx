@@ -1,5 +1,5 @@
 import React from "react";
-import Shopactpic from '../../images/SHOP ACT.png'
+
 
 const ShopActdetails = () => {
   return (

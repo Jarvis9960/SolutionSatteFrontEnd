@@ -1,5 +1,5 @@
 import React from "react";
-import personalPic from '../../images/PL.jpg'
+
 
 
 const Personaldetails = () => {

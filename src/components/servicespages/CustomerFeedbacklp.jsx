@@ -1,7 +1,5 @@
 import React from "react";
-import imageOne from "../../images/clientOne.jpeg";
-import imageTwo from "../../images/clientTwo.jpeg";
-import imageThree from "../../images/clientThree.jpeg";
+
 
 const CustomerFeedbacklp = () => {
   return (

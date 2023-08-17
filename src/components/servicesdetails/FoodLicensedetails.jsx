@@ -1,5 +1,5 @@
 import React from "react";
-import Foodpic from '../../images/FOOD.jpg'
+
 
 const FoodLicensedetails = () => {
   return (
