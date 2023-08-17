@@ -7,7 +7,7 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import LoginNavbar from "../components/LoginNavbar";
-import imgFive from "../../public/Images/saathLogo.jpeg";
+import imgFive from "../../public/Images/saathLogo";
 
 const schema = yup
   .object()
