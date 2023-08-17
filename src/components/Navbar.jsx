@@ -79,7 +79,7 @@ const Navbar = () => {
                           to="/career"
                           class=" text-white hover:bg-blue-400 hover:text-white rounded-md px-6 py-2 text-sm font-medium  "
                         >
-                          career
+                          Career
                         </Link>
 
                         <Link
